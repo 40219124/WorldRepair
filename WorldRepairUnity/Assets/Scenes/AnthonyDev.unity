@@ -275,6 +275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8533611523852585303, guid: cc987c26bd36d304baaea5254ea58c0d,
+        type: 3}
+      propertyPath: curveStrength
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc987c26bd36d304baaea5254ea58c0d, type: 3}
 --- !u!1001 &610677651
@@ -403,6 +408,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ChildAlignment
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221727779475226404, guid: de9b5561a0eb3e04e9707151c724bdde,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221727779475226404, guid: de9b5561a0eb3e04e9707151c724bdde,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221727779475226404, guid: de9b5561a0eb3e04e9707151c724bdde,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5221727779475226405, guid: de9b5561a0eb3e04e9707151c724bdde,
         type: 3}
