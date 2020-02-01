@@ -33,11 +33,7 @@ public class ItemSlotRenderer : MonoBehaviour
         TargetSlot.OnChanged += UpdateGraphics;
 
         UpdateGraphics();
-
-        if (SelectedGraphic != null)
-        {
-            SelectedGraphic.gameObject.SetActive(false);
-        }
+        UpdateSelected();
 
         if (SlotIndex != null)
         {
