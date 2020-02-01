@@ -9,8 +9,12 @@ public class MakeItRain : MonoBehaviour
     {
         Invoke("StopRaining", RainDuration);
 
-        RainEffect.transform.SetParent(Camera.main.transform);
-        RainEffect.transform.localPosition = Vector3.zero;
+        var camera = Camera.main.transform;
+
+        gameObject.transform.position = camera.transform.position;
+        gameObject.transform.SetParent(camera.transform);
+
+        gameObject.transform.localRotation = Quaternion.identity;
 
         RainEffect.gameObject.SetActive(true);
     }

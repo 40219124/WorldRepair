@@ -1,7 +1,34 @@
 fileFormatVersion: 2
-guid: 2ca6970631f2fbf4b8fd75df3e922df1
+guid: 7645d2c02fc5ab541a8b52e297b71a7a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2332983640317547041
+    second: Bees_0
+  - first:
+      213: -126367013384081014
+    second: Bees_1
+  - first:
+      213: -5474950934700313699
+    second: Bees_2
+  - first:
+      213: -4355955560570230870
+    second: Bees_3
+  - first:
+      213: 8151939860842676794
+    second: Bees_4
+  - first:
+      213: 3751641191456039098
+    second: Bees_5
+  - first:
+      213: 2763684438416161042
+    second: Bees_6
+  - first:
+      213: -6767935712859175085
+    second: Bees_7
+  - first:
+      213: 4983148615625257047
+    second: Bees_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +67,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 1700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -83,18 +110,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -108,7 +123,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bees_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 117
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd23146db39f9fd0800000000000000
+      internalID: -2332983640317547041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1
+        width: 119
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219f117aa549a5620800000000000000
+      internalID: 2763684438416161042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bees_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 133
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750b2599343b72540800000000000000
+      internalID: 4983148615625257047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
