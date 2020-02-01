@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
                             HeldItem = null;
                             HeldRenderer.gameObject.SetActive(false);
                             panim.SetHolding(false);
+                            IsInteracting = true;
                         }
                     }
                 }
@@ -114,6 +115,11 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void InteractionFinished()
+    {
+        IsInteracting = false;
     }
 
     private IEnumerator<YieldInstruction> InteractRoutine(Interactable interactable)

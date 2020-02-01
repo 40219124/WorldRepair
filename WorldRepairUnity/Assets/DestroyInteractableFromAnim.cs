@@ -8,4 +8,15 @@ public class DestroyInteractableFromAnim : MonoBehaviour
     {
         Destroy(GetComponentInChildren<Interactable>(true)?.gameObject);
     }
+
+    public void FinishRaindance()
+    {
+        GetComponentInParent<PlayerController>()?.InteractionFinished();
+        MakeItRain mir = FindObjectOfType<MakeItRain>();
+        if (mir != null)
+        {
+            mir.BringTheRain = true;
+        }
+        GetComponentInParent<PAnimController>()?.SetRaindance(false);
+    }
 }
