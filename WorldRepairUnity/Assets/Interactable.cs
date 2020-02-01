@@ -23,7 +23,11 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
-        PickupItem = PickupItemTemplate.Generate();
+        if (Behaviour == InteractableBehaviour.Pickup &&
+            PickupItemTemplate != null)
+        {
+            PickupItem = PickupItemTemplate.Generate();
+        }
     }
 
     public void Interact(CharacterInventory character)

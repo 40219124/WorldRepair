@@ -66,6 +66,9 @@ public class PlayerController : MonoBehaviour
     private IEnumerator<YieldInstruction> PickupRoutine(Interactable interactable)
     {
         IsPickingUp = true;
+        interactable.transform.SetParent(PickupPoint);
+        interactable.transform.localPosition = Vector3.zero;
+
         yield return StartCoroutine(panim.PickupAnimation());
 
         interactable.Interact(inventory);
