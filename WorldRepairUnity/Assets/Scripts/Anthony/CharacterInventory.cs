@@ -9,8 +9,10 @@ public class Inventory
 public class CharacterInventory : MonoBehaviour
 {
 	public Inventory Hotbar;
-
 	public EventField<int> SelectedHotbarIcon = new EventField<int>();
+
+	[Space]
+	public InteractionZone CharacterInteractionZone;
 
 	private float scrollLockout;
 
@@ -27,6 +29,8 @@ public class CharacterInventory : MonoBehaviour
 				new ItemSlot()
 			}
 		};
+
+		CharacterInteractionZone.ClaimOwnership(this);
 	}
 
 	public Dictionary<KeyCode, int> Mappings = new Dictionary<KeyCode, int>()
@@ -106,5 +110,29 @@ public class CharacterInventory : MonoBehaviour
 			}
 			SelectedHotbarIcon.Value = currentSlot;
 		}
+	}
+
+	public void AddToHotbar(Item item)
+	{
+		foreach (var slot in Hotbar.Slots)
+		{
+			if (slot.Contents == null)
+			{
+				slot.Contents = item;
+				return;
+			}
+		}
+	}
+
+	public bool CanPickupItem (Item item)
+	{
+		foreach (var slot in Hotbar.Slots)
+		{
+			if (slot.Contents == null)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }

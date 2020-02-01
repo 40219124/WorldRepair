@@ -9,4 +9,11 @@ public class ItemTemplate : ScriptableObject
 	[Space]
 	public Sprite Icon;
 
+	public Item Generate()
+	{
+		return new Item()
+		{
+			Template = this
+		};
+	}
 }
