@@ -47,6 +47,22 @@ public class WorldManager : MonoBehaviour
 		}
 	}
 
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Z))
+		{
+			StartCoroutine(FadeToStyle(DefaultStyle, 1.0f));
+		}
+		if (Input.GetKeyDown(KeyCode.X))
+		{
+			StartCoroutine(FadeToStyle(FertileStyle, 1.0f));
+		}
+		if (Input.GetKeyDown(KeyCode.C))
+		{
+			StartCoroutine(FadeToStyle(GrassStyle, 1.0f));
+		}
+	}
+
 	public IEnumerator<YieldInstruction> FadeToStyle(GroundStyle newStyle, float duration)
 	{
 		for (int x = 0; x < Width; x++)
