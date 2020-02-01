@@ -21,9 +21,32 @@ public class PAnimController : MonoBehaviour
 
     public IEnumerator<YieldInstruction> PickupAnimation()
     {
-        // Play animation here...
+        anim.SetTrigger("Pickup");
+        int layerIndex = anim.GetLayerIndex("Pickup");
+        while (true)
+        {
+            yield return null;
+            if (anim.GetCurrentAnimatorStateInfo(layerIndex).IsName("Empty"))
+            {
+                yield break;
+            }
+        }
+    }
 
-        yield return new WaitForSeconds(0.2f);
+    public IEnumerator<YieldInstruction> DevoidAnimation()
+    {
+        anim.SetBool("Void", false);
+        
+        int layerIndex = anim.GetLayerIndex("VoidForm");
+        while (true)
+        {
+            yield return null;
+            if (anim.GetCurrentAnimatorStateInfo(layerIndex).IsName("NotVoid"))
+            {
+                Direction(Vector3.back);
+                yield break;
+            }
+        }
     }
 
     public void SetVoid(bool state)
@@ -43,7 +66,7 @@ public class PAnimController : MonoBehaviour
 
     public void Direction(Vector3 dir)
     {
-        if(dir == Vector3.zero)
+        if (dir == Vector3.zero)
         {
             anim.SetBool("Moving", false);
         }
@@ -51,9 +74,9 @@ public class PAnimController : MonoBehaviour
         {
             anim.SetBool("Moving", true);
             int offset = 0;
-            if(Mathf.Abs(dir.x) >= Mathf.Abs(dir.z))
+            if (Mathf.Abs(dir.x) >= Mathf.Abs(dir.z))
             {
-                if(dir.x > 0)
+                if (dir.x > 0)
                 {
                     offset = 0;
                 }
@@ -64,7 +87,7 @@ public class PAnimController : MonoBehaviour
             }
             else
             {
-                if(dir.z > 0)
+                if (dir.z > 0)
                 {
                     offset = 2;
                 }
