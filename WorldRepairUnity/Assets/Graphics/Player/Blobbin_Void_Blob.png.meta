@@ -26,6 +26,36 @@ TextureImporter:
   - first:
       213: 4377876089464939802
     second: Blobbin_Void_Blob_7
+  - first:
+      213: 7957997062256676408
+    second: Blobbin_Void_Blob_0
+  - first:
+      213: -3645238252072267666
+    second: Blobbin_Void_Blob_1
+  - first:
+      213: -9142677320248710907
+    second: Blobbin_Void_Blob_2
+  - first:
+      213: 8621959344388704292
+    second: Blobbin_Void_Blob_3
+  - first:
+      213: -1002680021336010195
+    second: Blobbin_Void_Blob_4
+  - first:
+      213: -279088226766647884
+    second: Blobbin_Void_Blob_5
+  - first:
+      213: 5844033293158053259
+    second: Blobbin_Void_Blob_6
+  - first:
+      213: -9107818289669726478
+    second: Blobbin_Void_Blob_7
+  - first:
+      213: -7635957018391634919
+    second: Blobbin_Void_Blob_8
+  - first:
+      213: 6822778574537926383
+    second: Blobbin_Void_Blob_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -125,10 +155,10 @@ TextureImporter:
       name: Blobbin_Void_Blob_0
       rect:
         serializedVersion: 2
-        x: 186
-        y: 236
-        width: 685
-        height: 895
+        x: 0
+        y: 186
+        width: 927
+        height: 1274
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb27bb770f4a8aef0800000000000000
-      internalID: -96646039280586050
+      spriteID: 83e49633a2c707e60800000000000000
+      internalID: 7957997062256676408
       vertices: []
       indices: 
       edges: []
@@ -146,10 +176,10 @@ TextureImporter:
       name: Blobbin_Void_Blob_1
       rect:
         serializedVersion: 2
-        x: 1013
-        y: 217
-        width: 635
-        height: 924
+        x: 948
+        y: 186
+        width: 770
+        height: 1274
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf9f0fe6b2e3e1ab0800000000000000
-      internalID: -5035518977087833605
+      spriteID: e60119f7f13896dc0800000000000000
+      internalID: -3645238252072267666
       vertices: []
       indices: 
       edges: []
@@ -167,10 +197,10 @@ TextureImporter:
       name: Blobbin_Void_Blob_2
       rect:
         serializedVersion: 2
-        x: 1759
-        y: 236
-        width: 688
-        height: 895
+        x: 1711
+        y: 186
+        width: 788
+        height: 1274
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1b3a3f0a3f693580800000000000000
-      internalID: -8846917697838367972
+      spriteID: 5092e8eca6fae1180800000000000000
+      internalID: -9142677320248710907
       vertices: []
       indices: 
       edges: []
@@ -188,10 +218,10 @@ TextureImporter:
       name: Blobbin_Void_Blob_3
       rect:
         serializedVersion: 2
-        x: 2590
-        y: 217
-        width: 634
-        height: 924
+        x: 2500
+        y: 186
+        width: 780
+        height: 1274
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73e1551f307a79ba0800000000000000
-      internalID: -6082209136364937673
+      spriteID: 4280626b75a57a770800000000000000
+      internalID: 8621959344388704292
       vertices: []
       indices: 
       edges: []
@@ -209,19 +239,19 @@ TextureImporter:
       name: Blobbin_Void_Blob_4
       rect:
         serializedVersion: 2
-        x: 3316
-        y: 262
-        width: 688
-        height: 895
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 4080
+        y: 186
+        width: 791
+        height: 1274
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e72e2f96ba3976390800000000000000
-      internalID: -7825123463106731394
+      spriteID: d22d2e045d3c512f0800000000000000
+      internalID: -1002680021336010195
       vertices: []
       indices: 
       edges: []
@@ -230,10 +260,10 @@ TextureImporter:
       name: Blobbin_Void_Blob_5
       rect:
         serializedVersion: 2
-        x: 4147
-        y: 243
-        width: 635
-        height: 923
+        x: 3285
+        y: 186
+        width: 785
+        height: 1274
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17fae1babc5974b80800000000000000
-      internalID: -8410589077109297295
+      spriteID: 4bd84968cba702cf0800000000000000
+      internalID: -279088226766647884
       vertices: []
       indices: 
       edges: []
@@ -251,19 +281,19 @@ TextureImporter:
       name: Blobbin_Void_Blob_6
       rect:
         serializedVersion: 2
-        x: 4969
-        y: 262
-        width: 685
-        height: 895
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 4871
+        y: 186
+        width: 840
+        height: 1274
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f48bd87f98a1bb320800000000000000
-      internalID: 2574680791838472271
+      spriteID: b85fd3e215d2a1150800000000000000
+      internalID: 5844033293158053259
       vertices: []
       indices: 
       edges: []
@@ -272,19 +302,61 @@ TextureImporter:
       name: Blobbin_Void_Blob_7
       rect:
         serializedVersion: 2
-        x: 5835
-        y: 243
-        width: 634
-        height: 923
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 5711
+        y: 186
+        width: 722
+        height: 1274
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a15eb3fbb1751cc30800000000000000
-      internalID: 4377876089464939802
+      spriteID: 2fe1e6555878a9180800000000000000
+      internalID: -9107818289669726478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobbin_Void_Blob_8
+      rect:
+        serializedVersion: 2
+        x: 6433
+        y: 186
+        width: 731
+        height: 1274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c9d9e7c81a70690800000000000000
+      internalID: -7635957018391634919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobbin_Void_Blob_9
+      rect:
+        serializedVersion: 2
+        x: 7174
+        y: 186
+        width: 690
+        height: 1274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6aa7407f06fae50800000000000000
+      internalID: 6822778574537926383
       vertices: []
       indices: 
       edges: []
