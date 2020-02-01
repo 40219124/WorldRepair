@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
@@ -14,12 +16,14 @@ public class PlayerController : MonoBehaviour
 
     private PAnimController panim;
     private CharacterInventory inventory;
+    private NavMeshAgent agent;
     private bool IsPickingUp;
 
     private void Awake()
     {
         inventory = GetComponent<CharacterInventory>();
         panim = GetComponent<PAnimController>();
+        agent = GetComponent<NavMeshAgent>();
 
         CharacterInteractionZone.ClaimOwnership(inventory);
     }

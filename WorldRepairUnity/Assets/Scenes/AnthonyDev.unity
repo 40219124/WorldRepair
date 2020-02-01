@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.1
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,13 +114,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.033333335
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: d4900c32d43ca534f86152b420c88714, type: 2}
 --- !u!1 &551845178
 GameObject:
   m_ObjectHideFlags: 0
@@ -5655,7 +5655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116944269}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 1.0606601, z: -1.0606602}
+  m_LocalPosition: {x: -0.25, y: 1.0606601, z: -4.8106604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5721,7 +5721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260457960}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 1.0606601, z: -1.0606602}
+  m_LocalPosition: {x: -0.25, y: 1.0606601, z: -4.8106604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 716462513}
@@ -5736,6 +5736,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6287836789983732601, guid: 3adca4c26ed6dad499ebf9a098b43133,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3adca4c26ed6dad499ebf9a098b43133,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5796,10 +5801,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8f2e18c5fc08582429c902f422cd2c84, type: 2}
+    - target: {fileID: -2530895045393947740, guid: 3adca4c26ed6dad499ebf9a098b43133,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 3adca4c26ed6dad499ebf9a098b43133,
         type: 3}
       propertyPath: m_Name
       value: WorldPlatform3
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 3adca4c26ed6dad499ebf9a098b43133,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2726396221703951952, guid: 3adca4c26ed6dad499ebf9a098b43133,
         type: 3}
@@ -5811,6 +5826,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8c3700cd8077ad74693aaaff772abf26, type: 2}
+    - target: {fileID: 5975585337510352905, guid: 3adca4c26ed6dad499ebf9a098b43133,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975585337510352905, guid: 3adca4c26ed6dad499ebf9a098b43133,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3adca4c26ed6dad499ebf9a098b43133, type: 3}
 --- !u!1 &1534801524
@@ -5989,6 +6014,7 @@ GameObject:
   - component: {fileID: 1858579506}
   - component: {fileID: 1858579507}
   - component: {fileID: 1858579508}
+  - component: {fileID: 1858579509}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6020,7 +6046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858579503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.25, y: 0, z: -3.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1534801525}
@@ -6067,3 +6093,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!195 &1858579509
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858579503}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.1
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
