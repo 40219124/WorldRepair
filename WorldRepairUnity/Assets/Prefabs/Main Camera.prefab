@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 24.000002, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 32.9, y: 0, z: 0}
 --- !u!20 &8533611523852585288
 Camera:
   m_ObjectHideFlags: 0
@@ -131,4 +131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768aa4549a6e8c940b8e79343e10e88c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curveStrength: 0.07
+  curveStrength: 0
