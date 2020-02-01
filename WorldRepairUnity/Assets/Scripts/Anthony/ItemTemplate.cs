@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+
+[Serializable]
+public struct Combination
+{
+	public ItemTemplate OtherItem;
+	public GameObject BehaviourObject;
+}
 
 [CreateAssetMenu]
 public class ItemTemplate : ScriptableObject
@@ -11,6 +19,13 @@ public class ItemTemplate : ScriptableObject
 
 	[Space]
 	public GameObject DroppedPrefab;
+	
+	[Space]
+	public Combination[] Combinations;
+
+	[Space]
+	public bool DestroyOnUse;
+	public GameObject WorldInteraction;
 
 	public Item Generate()
 	{

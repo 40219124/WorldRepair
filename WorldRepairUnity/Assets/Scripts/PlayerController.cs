@@ -39,10 +39,35 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("IntWorld"))
             {
-                var interaction = CharacterInteractionZone.GetInteraction();
-                if (interaction != null)
+                if (HeldItem != null)
                 {
-                    StartCoroutine(InteractRoutine(interaction));
+                    if (HeldItem.Template.WorldInteraction != null)
+                    {
+                        var clone = Instantiate(HeldItem.Template.WorldInteraction);
+
+                        if (HeldItem.Template.DestroyOnUse)
+                        {
+                            foreach (var slot in inventory.Hotbar.Slots)
+                            {
+                                if (slot.Contents == HeldItem)
+                                {
+                                    slot.Contents = null;
+                                }
+                            }
+
+                            HeldItem = null;
+                            HeldRenderer.gameObject.SetActive(false);
+                            panim.SetHolding(false);
+                        }
+                    }
+                }
+                else
+                {
+                    var interaction = CharacterInteractionZone.GetInteraction();
+                    if (interaction != null)
+                    {
+                        StartCoroutine(InteractRoutine(interaction));
+                    }
                 }
             }
             if (Input.GetButtonDown("IntInv"))
