@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 3600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -350,36 +350,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rain_Dance_Player_Spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 4432
-        y: 157
-        width: 90
-        height: 55
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7e573987e83d1650800000000000000
-      internalID: 6205178428677119615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Rain_Dance_Player_Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 4529
+        x: 4435
         y: 157
-        width: 751
+        width: 845
         height: 904
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5558432, y: 0.0040151714}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,36 +371,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rain_Dance_Player_Spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 5601
-        y: 144
-        width: 150
-        height: 62
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc0fdb7868c8cb6d0800000000000000
-      internalID: -2973347144540491572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Rain_Dance_Player_Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 5659
-        y: 160
-        width: 751
-        height: 907
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 5596
+        y: 140
+        width: 814
+        height: 927
+      alignment: 9
+      pivot: {x: 0.5356739, y: 0.027409641}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
