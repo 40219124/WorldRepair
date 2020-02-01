@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("IntInv"))
             {
                 var currentItem = inventory.CurrentItem;
-                if (currentItem != null)
+                if (currentItem != null && currentItem != HeldItem)
                 {
                     HeldItem = currentItem;
 
