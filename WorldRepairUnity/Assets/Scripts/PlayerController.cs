@@ -132,7 +132,10 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            
+            if (interactable.Devoiding)
+            {
+                yield return StartCoroutine(panim.DevoidAnimation());
+            }
         }
 
         IsInteracting = false;
