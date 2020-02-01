@@ -1,0 +1,451 @@
+fileFormatVersion: 2
+guid: b4ed62aefb8b19d41b1ee4272bf97efe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3401175314820583120
+    second: Rain_Dance_Player_Spritesheet_0
+  - first:
+      213: -5963336828083899766
+    second: Rain_Dance_Player_Spritesheet_1
+  - first:
+      213: -6520382621250271531
+    second: Rain_Dance_Player_Spritesheet_2
+  - first:
+      213: -2182505303046355352
+    second: Rain_Dance_Player_Spritesheet_3
+  - first:
+      213: 131641621062858679
+    second: Rain_Dance_Player_Spritesheet_4
+  - first:
+      213: 3710529230170356052
+    second: Rain_Dance_Player_Spritesheet_5
+  - first:
+      213: 5340435378330531855
+    second: Rain_Dance_Player_Spritesheet_6
+  - first:
+      213: -5060929276314752326
+    second: Rain_Dance_Player_Spritesheet_7
+  - first:
+      213: 6223666090511701752
+    second: Rain_Dance_Player_Spritesheet_8
+  - first:
+      213: -6014669072044868894
+    second: Rain_Dance_Player_Spritesheet_9
+  - first:
+      213: 6205178428677119615
+    second: Rain_Dance_Player_Spritesheet_10
+  - first:
+      213: -7747831505073697084
+    second: Rain_Dance_Player_Spritesheet_11
+  - first:
+      213: -2973347144540491572
+    second: Rain_Dance_Player_Spritesheet_12
+  - first:
+      213: 5056235281726539509
+    second: Rain_Dance_Player_Spritesheet_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1359
+        width: 618
+        height: 900
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031ba4542199cc0d0800000000000000
+      internalID: -3401175314820583120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1311
+        width: 796
+        height: 1058
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82fd0effb8fd3da0800000000000000
+      internalID: -5963336828083899766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 1301
+        width: 813
+        height: 910
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d64fbc6d82f285a0800000000000000
+      internalID: -6520382621250271531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 1323
+        width: 806
+        height: 917
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86604838dfe26b1e0800000000000000
+      internalID: -2182505303046355352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4532
+        y: 1314
+        width: 809
+        height: 864
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7bb1d5b5fa3d100800000000000000
+      internalID: 131641621062858679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 5724
+        y: 1268
+        width: 780
+        height: 1056
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459f105fca27e7330800000000000000
+      internalID: 3710529230170356052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 138
+        width: 871
+        height: 976
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08f1578ea90d1a40800000000000000
+      internalID: 5340435378330531855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 118
+        width: 825
+        height: 1140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba62eb13a7f3c9b0800000000000000
+      internalID: -5060929276314752326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 138
+        width: 781
+        height: 1046
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6189db557ee5650800000000000000
+      internalID: 6223666090511701752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3454
+        y: 139
+        width: 663
+        height: 1064
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eabc37985a978ca0800000000000000
+      internalID: -6014669072044868894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 4432
+        y: 157
+        width: 90
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e573987e83d1650800000000000000
+      internalID: 6205178428677119615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 4529
+        y: 157
+        width: 751
+        height: 904
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce8080cb4c2a7490800000000000000
+      internalID: -7747831505073697084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 5601
+        y: 144
+        width: 150
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0fdb7868c8cb6d0800000000000000
+      internalID: -2973347144540491572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rain_Dance_Player_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 160
+        width: 751
+        height: 907
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f68b1c133b5b2640800000000000000
+      internalID: 5056235281726539509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2dcb5b70224cc21429b4e1a1fdf6137f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
