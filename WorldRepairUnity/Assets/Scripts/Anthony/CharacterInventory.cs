@@ -13,6 +13,7 @@ public class CharacterInventory : MonoBehaviour
 
 	[Space]
 	public InteractionZone CharacterInteractionZone;
+	public Transform DropPoint;
 
 	private float scrollLockout;
 
@@ -110,6 +111,32 @@ public class CharacterInventory : MonoBehaviour
 			}
 			SelectedHotbarIcon.Value = currentSlot;
 		}
+
+		if (Input.GetButtonDown("IntWorld"))
+		{
+			CharacterInteractionZone.Interact();
+		}
+
+		if (Input.GetButtonDown("Drop"))
+		{
+			if (SelectedHotbarIcon.Value >= 0 && SelectedHotbarIcon.Value < Hotbar.Slots.Length)
+			{
+				var slot = Hotbar.Slots[SelectedHotbarIcon.Value];
+
+				if (slot.Contents != null)
+				{
+					var clone = Instantiate(slot.Contents.Template.DroppedPrefab, DropPoint.position, Quaternion.identity, null);
+
+					var interactable = clone.GetComponent<Interactable>();
+					if (interactable != null)
+					{
+						interactable.PickupItemTemplate = slot.Contents.Template;
+					}
+
+					slot.Contents = null;
+				}
+			}
+		}
 	}
 
 	public void AddToHotbar(Item item)
@@ -124,7 +151,7 @@ public class CharacterInventory : MonoBehaviour
 		}
 	}
 
-	public bool CanPickupItem (Item item)
+	public bool CanPickupItem(Item item)
 	{
 		foreach (var slot in Hotbar.Slots)
 		{

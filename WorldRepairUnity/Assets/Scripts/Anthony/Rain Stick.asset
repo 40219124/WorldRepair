@@ -15,3 +15,5 @@ MonoBehaviour:
   Name: Rain Stick
   Description: 
   Icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
+    type: 3}

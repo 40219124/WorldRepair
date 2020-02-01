@@ -9,6 +9,9 @@ public class ItemTemplate : ScriptableObject
 	[Space]
 	public Sprite Icon;
 
+	[Space]
+	public GameObject DroppedPrefab;
+
 	public Item Generate()
 	{
 		return new Item()

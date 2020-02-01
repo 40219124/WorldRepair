@@ -88,11 +88,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5221727778817184146}
     m_Modifications:
-    - target: {fileID: 4611562115071765249, guid: 51f86e909e70c604c9e21b77f5a77087,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7399424165254477267, guid: 51f86e909e70c604c9e21b77f5a77087,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,11 +197,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slot
-      objectReference: {fileID: 0}
-    - target: {fileID: 7399424166498669490, guid: 51f86e909e70c604c9e21b77f5a77087,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f86e909e70c604c9e21b77f5a77087, type: 3}

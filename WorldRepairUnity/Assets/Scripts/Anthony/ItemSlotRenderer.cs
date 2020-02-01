@@ -20,37 +20,19 @@ public class ItemSlotRenderer : MonoBehaviour
         {
             TargetCharacter.SelectedHotbarIcon.OnAfterChanged -= UpdateSelected;
         }
+        if (TargetSlot != null)
+        {
+            TargetSlot.OnChanged -= UpdateGraphics;
+        }
 
         TargetSlot = target;
         TargetCharacter = character;
         Index = index;
 
         TargetCharacter.SelectedHotbarIcon.OnAfterChanged += UpdateSelected;
+        TargetSlot.OnChanged += UpdateGraphics;
 
-        if (ItemName != null)
-        {
-            if (target.Contents == null)
-            {
-                ItemName.text = "";
-            }
-            else
-            {
-                ItemName.text = target.Contents.Template.Name;
-            }
-        }
-
-        if (ItemIcon != null)
-        {
-            if (target.Contents == null)
-            {
-                ItemIcon.gameObject.SetActive(false);
-            }
-            else
-            {
-                ItemIcon.gameObject.SetActive(true);
-                ItemIcon.sprite = target.Contents.Template.Icon;
-            }
-        }
+        UpdateGraphics();
 
         if (SelectedGraphic != null)
         {
@@ -60,6 +42,34 @@ public class ItemSlotRenderer : MonoBehaviour
         if (SlotIndex != null)
         {
             SlotIndex.text = (index + 1).ToString();
+        }
+    }
+
+    private void UpdateGraphics()
+    {
+        if (ItemName != null)
+        {
+            if (TargetSlot.Contents == null)
+            {
+                ItemName.text = "";
+            }
+            else
+            {
+                ItemName.text = TargetSlot.Contents.Template.Name;
+            }
+        }
+
+        if (ItemIcon != null)
+        {
+            if (TargetSlot.Contents == null)
+            {
+                ItemIcon.gameObject.SetActive(false);
+            }
+            else
+            {
+                ItemIcon.gameObject.SetActive(true);
+                ItemIcon.sprite = TargetSlot.Contents.Template.Icon;
+            }
         }
     }
 

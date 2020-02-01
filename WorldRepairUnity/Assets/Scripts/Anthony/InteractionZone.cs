@@ -31,16 +31,31 @@ public class InteractionZone : MonoBehaviour
 
 	public bool CanInteract()
 	{
+		Prune();
+
 		return InArea.Count > 0;
 	}
 
 	public void Interact()
 	{
+		Prune();
+
 		if (InArea.Count == 0)
 		{
 			return;
 		}
 
 		InArea[0].Interact(Owner);
+	}
+
+	private void Prune()
+	{
+		for (int i = InArea.Count - 1; i >= 0; i--)
+		{
+			if (InArea[i] == null)
+			{
+				InArea.RemoveAt(i);
+			}
+		}
 	}
 }
