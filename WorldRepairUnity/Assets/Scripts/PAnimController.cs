@@ -6,6 +6,7 @@ public class PAnimController : MonoBehaviour
 {
     Animator anim;
     string[] layers = { "Right", "Left", "Up", "Down" };
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,13 @@ public class PAnimController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public IEnumerator<YieldInstruction> PickupAnimation()
+    {
+        // Play animation here...
+
+        yield return new WaitForSeconds(0.2f);
     }
 
     public void SetVoid(bool state)

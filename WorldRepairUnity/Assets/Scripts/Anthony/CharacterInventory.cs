@@ -11,10 +11,6 @@ public class CharacterInventory : MonoBehaviour
 	public Inventory Hotbar;
 	public EventField<int> SelectedHotbarIcon = new EventField<int>();
 
-	[Space]
-	public InteractionZone CharacterInteractionZone;
-	public Transform DropPoint;
-
 	private float scrollLockout;
 
 	private void Awake()
@@ -30,8 +26,6 @@ public class CharacterInventory : MonoBehaviour
 				new ItemSlot()
 			}
 		};
-
-		CharacterInteractionZone.ClaimOwnership(this);
 	}
 
 	public Dictionary<KeyCode, int> Mappings = new Dictionary<KeyCode, int>()
@@ -110,32 +104,6 @@ public class CharacterInventory : MonoBehaviour
 				currentSlot = Hotbar.Slots.Length - 1;
 			}
 			SelectedHotbarIcon.Value = currentSlot;
-		}
-
-		if (Input.GetButtonDown("IntWorld"))
-		{
-			CharacterInteractionZone.Interact();
-		}
-
-		if (Input.GetButtonDown("Drop"))
-		{
-			if (SelectedHotbarIcon.Value >= 0 && SelectedHotbarIcon.Value < Hotbar.Slots.Length)
-			{
-				var slot = Hotbar.Slots[SelectedHotbarIcon.Value];
-
-				if (slot.Contents != null)
-				{
-					var clone = Instantiate(slot.Contents.Template.DroppedPrefab, DropPoint.position, Quaternion.identity, null);
-
-					var interactable = clone.GetComponent<Interactable>();
-					if (interactable != null)
-					{
-						interactable.PickupItemTemplate = slot.Contents.Template;
-					}
-
-					slot.Contents = null;
-				}
-			}
 		}
 	}
 

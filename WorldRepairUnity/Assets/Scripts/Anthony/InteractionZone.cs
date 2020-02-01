@@ -36,16 +36,18 @@ public class InteractionZone : MonoBehaviour
 		return InArea.Count > 0;
 	}
 
-	public void Interact()
+	public Interactable GetInteraction()
 	{
 		Prune();
 
 		if (InArea.Count == 0)
 		{
-			return;
+			return null;
 		}
 
-		InArea[0].Interact(Owner);
+		var interactable = InArea[0];
+
+		return interactable;
 	}
 
 	private void Prune()
