@@ -18,6 +18,16 @@ public class PAnimController : MonoBehaviour
         
     }
 
+    public void SetVoid(bool state)
+    {
+        anim.SetBool("Void", state);
+    }
+
+    public void SetRaindance(bool state)
+    {
+        anim.SetBool("Rain", state);
+    }
+
     public void Direction(Vector3 dir)
     {
         if(dir == Vector3.zero)
