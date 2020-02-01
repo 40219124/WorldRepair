@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     float speed = 5.0f;
+
+    PAnimController panim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        panim = GetComponent<PAnimController>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = Vector3.zero;
         move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         move = move.normalized;
+        panim.Direction(move);
         move *= speed;
         transform.position += move * Time.fixedDeltaTime;
     }
