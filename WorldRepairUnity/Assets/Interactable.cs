@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour
@@ -11,6 +9,7 @@ public class Interactable : MonoBehaviour
         Trigger
     }
 
+    public SpriteRenderer Renderer;
     public InteractableBehaviour Behaviour;
 
     [Header("Pickup")]
@@ -20,6 +19,7 @@ public class Interactable : MonoBehaviour
 
     [Header("Trigger")]
     public string AnimationName;
+    public bool Devoiding;
 
     private void Start()
     {
@@ -27,24 +27,6 @@ public class Interactable : MonoBehaviour
             PickupItemTemplate != null)
         {
             PickupItem = PickupItemTemplate.Generate();
-        }
-    }
-
-    public void Interact(CharacterInventory character)
-    {
-        switch (Behaviour)
-        {
-            case InteractableBehaviour.Pickup:
-
-                character.AddToHotbar(PickupItem);
-
-                Destroy(gameObject);
-
-                break;
-
-            case InteractableBehaviour.Trigger:
-
-                break;
         }
     }
 }

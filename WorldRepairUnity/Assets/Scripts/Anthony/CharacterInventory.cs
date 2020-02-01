@@ -41,6 +41,31 @@ public class CharacterInventory : MonoBehaviour
 		[KeyCode.Alpha9] = 8,
 	};
 
+	public Item CurrentItem
+	{
+		get
+		{
+			var slot = CurrentSlot;
+
+			return slot?.Contents;
+		}
+	}
+
+	public ItemSlot CurrentSlot
+	{
+		get
+		{
+			if (SelectedHotbarIcon.Value < 0 || SelectedHotbarIcon.Value >= Hotbar.Slots.Length)
+			{
+				return null;
+			}
+
+			var slot = Hotbar.Slots[SelectedHotbarIcon.Value];
+
+			return slot;
+		}
+	}
+
 	private void Update()
 	{
 		foreach (var mapping in Mappings)

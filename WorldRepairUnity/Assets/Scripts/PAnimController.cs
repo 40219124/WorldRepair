@@ -16,7 +16,7 @@ public class PAnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public IEnumerator<YieldInstruction> PickupAnimation()
@@ -29,6 +29,11 @@ public class PAnimController : MonoBehaviour
     public void SetVoid(bool state)
     {
         anim.SetBool("Void", state);
+    }
+
+    public void SetHolding(bool state)
+    {
+        anim.SetBool("Holding", state);
     }
 
     public void SetRaindance(bool state)
