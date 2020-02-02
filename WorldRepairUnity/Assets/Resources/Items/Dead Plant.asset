@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Dead Plant
   Description: 
-  Icon: {fileID: 21300000, guid: 5f6e73963c6ccc947802936cb9086999, type: 3}
+  Icon: {fileID: 21300000, guid: 1345b71be8c25524898ca326666e830f, type: 3}
   DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
     type: 3}
   Combinations: []
