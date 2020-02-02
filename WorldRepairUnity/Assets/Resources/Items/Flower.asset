@@ -17,7 +17,14 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: e693b1e57904d8a4f8753a0cc5537394, type: 3}
   DroppedPrefab: {fileID: 7076985020002090867, guid: 25ce1c334cd6eb64fb385b7eb6ce9263,
     type: 3}
-  Combinations: []
+  Combinations:
+  - ActionTarget: {fileID: 11400000, guid: ef3718bf01c2b5e42b7c0fbd8a14fe5a, type: 2}
+    BehaviourObject: {fileID: -7035631585820295385, guid: 5f938ebc28b975e4a889dc192b096757,
+      type: 3}
+    ActionText: Give Flowers
+    RequiresWater: 0
+    InWorld: 1
+    InInventory: 0
   DestroyOnUse: 1
   WorldInteraction:
     ActionTarget: {fileID: 0}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4597489271279912167}
   - component: {fileID: 619251773501042452}
+  - component: {fileID: 6340536379885446743}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4162322329387558968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.047, y: 0.428, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5758989075218317866}
@@ -70,7 +71,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e5957f3dc59fb0c4a83d076b38e2fcda, type: 3}
+  m_Sprite: {fileID: -8032725970972398048, guid: 873ee65baabd7cc4380b19a71c5ed12a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -81,6 +83,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &6340536379885446743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4162322329387558968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b525963fcfc721b4c9918f1182f0c46b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomSprites:
+  - {fileID: -8032725970972398048, guid: 873ee65baabd7cc4380b19a71c5ed12a, type: 3}
+  - {fileID: -4549590372201348015, guid: 873ee65baabd7cc4380b19a71c5ed12a, type: 3}
+  - {fileID: 7448211931030967596, guid: 873ee65baabd7cc4380b19a71c5ed12a, type: 3}
 --- !u!1 &5758989075218317867
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5758989075218317866}
   m_Layer: 0
-  m_Name: Dec_Nest
+  m_Name: Dec_Blossom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

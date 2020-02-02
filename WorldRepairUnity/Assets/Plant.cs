@@ -8,6 +8,7 @@ public class Plant : BehaviourObj
 
     public Animator anim;
     public Sprite[] RandomSprites;
+    public int TreeType;
 
     public GameObject Spreading;
     public float MinSpreadWait;
@@ -50,7 +51,8 @@ public class Plant : BehaviourObj
 
         // Have a random graphic.
         var thisInteractable = GetComponent<Interactable>();
-        thisInteractable.Renderer.sprite = RandomSprites[Random.Range(0, RandomSprites.Length)];
+        TreeType = Random.Range(0, RandomSprites.Length);
+        thisInteractable.Renderer.sprite = RandomSprites[TreeType];
 
         yield break;
     }
