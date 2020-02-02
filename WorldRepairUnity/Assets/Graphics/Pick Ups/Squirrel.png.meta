@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 071c0bcefdd3e5943bee22e17b180d67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2783927706045066836
+    second: Squirrel_0
+  - first:
+      213: 8866393198409553919
+    second: Squirrel_1
+  - first:
+      213: -7204476114178449321
+    second: Squirrel_2
+  - first:
+      213: 2838680701589115213
+    second: Squirrel_3
+  - first:
+      213: -8372164463902552562
+    second: Squirrel_4
+  - first:
+      213: -393537264452274046
+    second: Squirrel_5
+  - first:
+      213: 4960147430015521276
+    second: Squirrel_6
+  - first:
+      213: -386889408574925879
+    second: Squirrel_7
+  - first:
+      213: 6305636061169101502
+    second: Squirrel_8
+  - first:
+      213: 5264390688578535764
+    second: Squirrel_9
+  - first:
+      213: 1286470375814606610
+    second: Squirrel_10
+  - first:
+      213: 569132921045767903
+    second: Squirrel_11
+  - first:
+      213: -6219998808250665574
+    second: Squirrel_12
+  - first:
+      213: 3127678412476784588
+    second: Squirrel_13
+  - first:
+      213: 7289822208597929052
+    second: Squirrel_14
+  - first:
+      213: 8307424082516135500
+    second: Squirrel_15
+  - first:
+      213: -3592134121744113849
+    second: Squirrel_16
+  - first:
+      213: -6148602689080674091
+    second: Squirrel_17
+  - first:
+      213: 4513446293964056008
+    second: Squirrel_18
+  - first:
+      213: 7616294857783875144
+    second: Squirrel_19
+  - first:
+      213: -9001822892945320390
+    second: Squirrel_20
+  - first:
+      213: -1319281224685818392
+    second: Squirrel_21
+  - first:
+      213: -4387177584113405610
+    second: Squirrel_22
+  - first:
+      213: -9106751350931506519
+    second: Squirrel_23
+  - first:
+      213: -6480622191330709835
+    second: Squirrel_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Squirrel_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 158
+        height: 296
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e2f2faf7f72a620800000000000000
+      internalID: 2783927706045066836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 6
+        width: 161
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e80f717c810db80800000000000000
+      internalID: -8372164463902552562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_5
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 11
+        width: 162
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288717a61ffd98af0800000000000000
+      internalID: -393537264452274046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_6
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 4
+        width: 162
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf154afbecbf5d440800000000000000
+      internalID: 4960147430015521276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_7
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 13
+        width: 161
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3d78af12e71aaf0800000000000000
+      internalID: -386889408574925879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_8
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 11
+        width: 169
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaa0e4c69e128750800000000000000
+      internalID: 6305636061169101502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_9
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 8
+        width: 166
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4510997707fde0940800000000000000
+      internalID: 5264390688578535764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_10
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 9
+        width: 161
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f2e74adf57ad110800000000000000
+      internalID: 1286470375814606610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_11
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 13
+        width: 164
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6d9e45067f5e700800000000000000
+      internalID: 569132921045767903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_12
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 9
+        width: 166
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95bdd2f9002ea9a0800000000000000
+      internalID: -6219998808250665574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_13
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 11
+        width: 176
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf165be1feb76b20800000000000000
+      internalID: 3127678412476784588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_14
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 13
+        width: 178
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cab33fca6aa2560800000000000000
+      internalID: 7289822208597929052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_15
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 8
+        width: 184
+        height: 217
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e46ec3036e94370800000000000000
+      internalID: 8307424082516135500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_17
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 0
+        width: 166
+        height: 296
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8b5545e66cbaaa0800000000000000
+      internalID: -6148602689080674091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_18
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 6
+        width: 156
+        height: 209
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5e788bd7bf2ae30800000000000000
+      internalID: 4513446293964056008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_19
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 1
+        width: 168
+        height: 195
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84697def1d382b960800000000000000
+      internalID: 7616294857783875144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_20
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 8
+        width: 157
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36d307c5c9131380800000000000000
+      internalID: -9001822892945320390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_21
+      rect:
+        serializedVersion: 2
+        x: 3975
+        y: 0
+        width: 162
+        height: 296
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed62cb47b8f0bde0800000000000000
+      internalID: -1319281224685818392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_22
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 8
+        width: 157
+        height: 211
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6513d544b3d9d13c0800000000000000
+      internalID: -4387177584113405610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_23
+      rect:
+        serializedVersion: 2
+        x: 4423
+        y: 18
+        width: 166
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa3bed55e15e9180800000000000000
+      internalID: -9106751350931506519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel_24
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 18
+        width: 170
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be283ae3743016a0800000000000000
+      internalID: -6480622191330709835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f7201111b54e2cd49a3894d72144daf7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
