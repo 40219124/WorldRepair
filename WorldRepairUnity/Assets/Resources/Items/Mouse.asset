@@ -17,7 +17,14 @@ MonoBehaviour:
   Icon: {fileID: 3033183314803414045, guid: 60249dd48cf7918439b326dd10f66505, type: 3}
   DroppedPrefab: {fileID: 4695288314762943041, guid: 538f0ac7c64f5054cbe405709a1de297,
     type: 3}
-  Combinations: []
+  Combinations:
+  - ActionTarget: {fileID: 11400000, guid: ef3718bf01c2b5e42b7c0fbd8a14fe5a, type: 2}
+    BehaviourObject: {fileID: 7404536070479854642, guid: 6483c172e7fac9846a455a0dcbccc73c,
+      type: 3}
+    ActionText: Upgrade into Squillel
+    RequiresWater: 0
+    InWorld: 1
+    InInventory: 0
   DestroyOnUse: 1
   WorldInteraction:
     ActionTarget: {fileID: 0}
