@@ -181,6 +181,7 @@ MonoBehaviour:
   anim: {fileID: 1530932339462051092}
   RandomSprites:
   - {fileID: 21300000, guid: c6be5e384a2b72949941a4c34493b9a9, type: 3}
+  TreeType: 0
   Spreading: {fileID: 7076985020002090867}
   MinSpreadWait: 2
   MaxSpreadWait: 2
@@ -198,5 +199,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OneTimeUseIdentifier: GrassSpawnsBugs
   Scatter: {fileID: 202709430903058158, guid: 20e934c8b9c60b8489d4e7828526e11a, type: 3}
-  Count: 10
+  Count: 18
   Over: 20

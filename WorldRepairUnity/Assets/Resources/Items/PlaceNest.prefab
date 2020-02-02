@@ -60,5 +60,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OneTimeUseIdentifier: Borbs
   Scatter: {fileID: 6566260685836311864, guid: e55c113f2edfcc646b7fb52ac58425a5, type: 3}
-  Count: 12
+  Count: 10
   Over: 30
