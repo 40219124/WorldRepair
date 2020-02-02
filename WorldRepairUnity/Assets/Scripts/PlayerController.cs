@@ -86,7 +86,10 @@ public class PlayerController : MonoBehaviour
                     if (combo.BehaviourObject != null)
                     {
                         var clone = Instantiate(combo.BehaviourObject);
-                        StartCoroutine(clone.Run(this, interaction));
+                        foreach (var behaviour in clone.GetComponents<BehaviourObj>())
+                        {
+                            StartCoroutine(behaviour.Run(this, interaction));
+                        }
 
                         if (HeldItem.Template.DestroyOnUse)
                         {
@@ -100,7 +103,10 @@ public class PlayerController : MonoBehaviour
                         && HeldItem.Template.WorldInteraction.CanUse())
                     {
                         var clone = Instantiate(HeldItem.Template.WorldInteraction.BehaviourObject);
-                        StartCoroutine(clone.Run(this, interaction));
+                        foreach (var behaviour in clone.GetComponents<BehaviourObj>())
+                        {
+                            StartCoroutine(behaviour.Run(this, interaction));
+                        }
 
                         if (HeldItem.Template.DestroyOnUse)
                         {
@@ -159,7 +165,10 @@ public class PlayerController : MonoBehaviour
                             HeldItem = null;
 
                             var clone = Instantiate(combo.BehaviourObject);
-                            StartCoroutine(clone.Run(this, null));
+                            foreach (var behaviour in clone.GetComponents<BehaviourObj>())
+                            {
+                                StartCoroutine(behaviour.Run(this, null));
+                            }
                         }
                     }
                 }
@@ -181,8 +190,12 @@ public class PlayerController : MonoBehaviour
                     if (interactable != null)
                     {
                         interactable.PickupItemTemplate = slot.Contents.Template;
+
+                        if (interactable.Renderer != null)
+                        {
+                            interactable.Renderer.sprite = slot.Contents.Template.Icon;
+                        }
                     }
-                    interactable.Renderer.sprite = slot.Contents.Template.Icon;
 
                     slot.Contents = null;
                 }

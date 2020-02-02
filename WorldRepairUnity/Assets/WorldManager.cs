@@ -73,6 +73,22 @@ public class WorldManager : MonoBehaviour
 		}
 	}
 
+	public IEnumerator<YieldInstruction> Scatter(GameObject gameObject, int count, float over)
+	{
+		for (int i = 0; i < count; i++)
+		{
+			var clone = Instantiate(gameObject);
+
+			clone.transform.position = new Vector3(
+				UnityEngine.Random.Range(Width * -0.5f, Width * 0.5f),
+				0,
+				UnityEngine.Random.Range(Height * -0.5f, Height * 0.5f)
+			);
+
+			yield return new WaitForSeconds(over / count);
+		}
+	}
+
 	public IEnumerator<YieldInstruction> FadeToStyle(GroundStyle newStyle, float duration)
 	{
 		for (int x = 0; x < Width; x++)

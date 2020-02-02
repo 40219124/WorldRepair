@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7076985020002090864}
   - component: {fileID: 1530932339462051092}
   - component: {fileID: 1530932339462051093}
+  - component: {fileID: -7953304038973393399}
   m_Layer: 0
   m_Name: Plant(Grass)
   m_TagString: Untagged
@@ -183,3 +184,19 @@ MonoBehaviour:
   Spreading: {fileID: 7076985020002090867}
   MinSpreadWait: 2
   MaxSpreadWait: 2
+--- !u!114 &-7953304038973393399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7076985020002090867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0781887b21368b46afa403fe91214e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OneTimeUseIdentifier: GrassSpawnsBugs
+  Scatter: {fileID: 202709430903058158, guid: 20e934c8b9c60b8489d4e7828526e11a, type: 3}
+  Count: 10
+  Over: 20
