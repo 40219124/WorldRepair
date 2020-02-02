@@ -160,8 +160,14 @@ public class PlayerController : MonoBehaviour
                         else
                         {
                             // Consume the two items used in crafting
-                            inventory.Hotbar.Remove(selectSlot);
-                            inventory.Hotbar.Remove(HeldItem);
+                            if (selectSlot.Template.DestroyOnUse)
+                            {
+                                inventory.Hotbar.Remove(selectSlot);
+                            }
+                            if (HeldItem.Template.DestroyOnUse)
+                            {
+                                inventory.Hotbar.Remove(HeldItem);
+                            }
 
                             HeldItem = null;
 
