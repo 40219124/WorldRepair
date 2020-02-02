@@ -17,14 +17,7 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 5f6e73963c6ccc947802936cb9086999, type: 3}
   DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
     type: 3}
-  Combinations:
-  - ActionTarget: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
-    BehaviourObject: {fileID: 6689114639577200190, guid: 8fbb2150a1189f942a700b226940288a,
-      type: 3}
-    ActionText: Search for Bugs
-    RequiresWater: 0
-    InWorld: 0
-    InInventory: 1
+  Combinations: []
   DestroyOnUse: 1
   WorldInteraction:
     ActionTarget: {fileID: 0}
