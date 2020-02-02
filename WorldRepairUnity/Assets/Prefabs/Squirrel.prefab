@@ -111,6 +111,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5614738656659979444}
+  - component: {fileID: 7404536070479854642}
+  - component: {fileID: 3201986525273690651}
+  - component: {fileID: 4050801924383259055}
   m_Layer: 0
   m_Name: Squirrel
   m_TagString: Untagged
@@ -133,3 +136,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7404536070479854642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5614738656659979445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62143c1b0dfb27c4ab8df2bf1588bd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3201986525273690651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5614738656659979445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ebe73e9f5825e4e9dd42f847010b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Renderer: {fileID: 0}
+  Behaviour: 0
+  PickupItemTemplate: {fileID: 11400000, guid: c906aece5d527d547a346c2536beeb48, type: 2}
+  AnimationName: 
+  Devoiding: 0
+--- !u!135 &4050801924383259055
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5614738656659979445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}

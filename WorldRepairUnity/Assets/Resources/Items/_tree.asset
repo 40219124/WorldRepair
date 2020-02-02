@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f66e82eaccbf67e488b28429abee223c, type: 3}
-  m_Name: Flower
+  m_Name: _tree
   m_EditorClassIdentifier: 
-  Name: Flower
+  Name: Tree
   Description: 
-  Icon: {fileID: 21300000, guid: e693b1e57904d8a4f8753a0cc5537394, type: 3}
-  DroppedPrefab: {fileID: 7076985020002090867, guid: 25ce1c334cd6eb64fb385b7eb6ce9263,
+  Icon: {fileID: 6224024930817484846, guid: 3a74d394dae0d5f43b6cc0ad9149a1a2, type: 3}
+  DroppedPrefab: {fileID: 7076985020002090867, guid: 27948fbfdd1b4cb4e9e8db20dd1c35b1,
     type: 3}
   Combinations: []
-  DestroyOnUse: 1
+  DestroyOnUse: 0
   WorldInteraction:
     ActionTarget: {fileID: 0}
     BehaviourObject: {fileID: 0}

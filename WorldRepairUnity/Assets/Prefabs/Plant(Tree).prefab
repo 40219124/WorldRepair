@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 1480766649312957734}
   Behaviour: 2
-  PickupItemTemplate: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
+  PickupItemTemplate: {fileID: 11400000, guid: ef3718bf01c2b5e42b7c0fbd8a14fe5a, type: 2}
   AnimationName: 
   Devoiding: 0
 --- !u!95 &1530932339462051092
