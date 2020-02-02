@@ -139,7 +139,7 @@ public class WorldManager : MonoBehaviour
 			{
 				var tile = Map[x, y];
 
-				tile.Overlay.sprite = FertileStyle.RandomSprite();
+				tile.Overlay.sprite = GrassStyle.RandomSprite();
 				tile.Overlay.gameObject.SetActive(true);
 				tile.Overlay.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
 			}

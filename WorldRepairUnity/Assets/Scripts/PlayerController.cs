@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
                         }
                     }
                     // Can I use my current object's "World Interaction"
-                    else if(HeldItem.Template.WorldInteraction.BehaviourObject != null
+                    else if (HeldItem.Template.WorldInteraction.BehaviourObject != null
                         && HeldItem.Template.WorldInteraction.CanUse())
                     {
                         var clone = Instantiate(HeldItem.Template.WorldInteraction.BehaviourObject);
@@ -217,6 +217,10 @@ public class PlayerController : MonoBehaviour
 
         if (interactable.Behaviour == Interactable.InteractableBehaviour.Pickup)
         {
+            interactable.transform.SetParent(PickupPoint);
+            interactable.transform.localPosition = Vector3.zero;
+            yield return StartCoroutine(panim.PickupAnimation());
+
             if (!inventory.IsFull)
             {
                 inventory.AddToHotbar(interactable.PickupItem);
@@ -226,7 +230,7 @@ public class PlayerController : MonoBehaviour
             else
             {
                 interactable.transform.SetParent(null);
-                Vector3 pos = interactable.transform.localPosition;
+                var pos = interactable.transform.localPosition;
                 pos.y = 0.0f;
                 interactable.transform.localPosition = pos;
             }

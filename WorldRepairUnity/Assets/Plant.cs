@@ -69,7 +69,7 @@ public class Plant : BehaviourObj
             }
 
             cache.Clear();
-            float localDistance = 1.25f;
+            float localDistance = 1.2f;
 
             foreach (var plant in AllPlants)
             {
