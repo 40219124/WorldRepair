@@ -9,6 +9,8 @@ public struct TileObjects
 
 public class WorldManager : MonoBehaviour
 {
+	public static WorldManager Instance;
+
 	public int Width = 10;
 	public int Height = 10;
 	public SpriteRenderer MainTilePrefab;
@@ -20,6 +22,10 @@ public class WorldManager : MonoBehaviour
 
 	private TileObjects[,] Map;
 
+	private void Awake()
+	{
+		Instance = this;
+	}
 
 	private void Start()
 	{

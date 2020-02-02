@@ -37,6 +37,10 @@ public class MakeItRain : MonoBehaviour
         gameObject.transform.localRotation = Quaternion.identity;
 
         RainEffect.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(4.0f);
+
+        StartCoroutine(WorldManager.Instance.FadeToStyle(WorldManager.Instance.FertileStyle, 10.0f));
     }
 
     private void StopRaining()
