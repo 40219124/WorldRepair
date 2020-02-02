@@ -46,15 +46,12 @@ public class InteractionZone : MonoBehaviour
 		}
 		foreach (var inArea in InArea)
 		{
-			if (inArea.Behaviour != Interactable.InteractableBehaviour.None)
+			if (inArea.Behaviour == Interactable.InteractableBehaviour.Pickup
+				&& Owner.GetComponent<PlayerController>().IsVoided)
 			{
-				if (inArea.Behaviour == Interactable.InteractableBehaviour.Pickup
-					&& Owner.GetComponent<PlayerController>().IsVoided)
-				{
-					continue;
-				}
-				return inArea;
+				continue;
 			}
+			return inArea;
 		}
 
 		return null;

@@ -78,7 +78,8 @@ public class PlayerController : MonoBehaviour
                     var interaction = CharacterInteractionZone.GetInteraction();
 
                     if (interaction != null
-                        && interaction.Behaviour == Interactable.InteractableBehaviour.Pickup)
+                        && (interaction.Behaviour == Interactable.InteractableBehaviour.Pickup
+                        || interaction.Behaviour == Interactable.InteractableBehaviour.None))
                     {
                         combo = HeldItem.Template.CanCombineInWorld(interaction.PickupItemTemplate);
                     }
@@ -211,19 +212,25 @@ public class PlayerController : MonoBehaviour
     private IEnumerator<YieldInstruction> InteractRoutine(Interactable interactable)
     {
         IsInteracting = true;
-        interactable.transform.SetParent(PickupPoint);
-        interactable.transform.localPosition = Vector3.zero;
 
-        yield return StartCoroutine(panim.PickupAnimation());
+        Debug.Log("Interacting with " + interactable);
 
         if (interactable.Behaviour == Interactable.InteractableBehaviour.Pickup)
         {
+            interactable.transform.SetParent(PickupPoint);
+            interactable.transform.localPosition = Vector3.zero;
+            yield return StartCoroutine(panim.PickupAnimation());
+
             inventory.AddToHotbar(interactable.PickupItem);
 
             Destroy(interactable.gameObject);
         }
         else if (interactable.Behaviour == Interactable.InteractableBehaviour.Trigger)
         {
+            interactable.transform.SetParent(PickupPoint);
+            interactable.transform.localPosition = Vector3.zero;
+            yield return StartCoroutine(panim.PickupAnimation());
+
             if (interactable.Devoiding)
             {
                 yield return StartCoroutine(panim.DevoidAnimation(this));

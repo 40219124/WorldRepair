@@ -17,7 +17,14 @@ MonoBehaviour:
   Icon: {fileID: -2332983640317547041, guid: 7645d2c02fc5ab541a8b52e297b71a7a, type: 3}
   DroppedPrefab: {fileID: 7358021951129806733, guid: 216b5ab53e4581c40b4f3756b21a5321,
     type: 3}
-  Combinations: []
+  Combinations:
+  - ActionTarget: {fileID: 11400000, guid: ef3718bf01c2b5e42b7c0fbd8a14fe5a, type: 2}
+    BehaviourObject: {fileID: -7035631585820295385, guid: 3c398ed7a6d27e848a2fe8e208a80890,
+      type: 3}
+    ActionText: Place Bee
+    RequiresWater: 0
+    InWorld: 1
+    InInventory: 0
   DestroyOnUse: 0
   WorldInteraction:
     ActionTarget: {fileID: 0}

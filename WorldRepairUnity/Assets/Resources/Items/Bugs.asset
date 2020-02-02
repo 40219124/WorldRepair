@@ -32,7 +32,7 @@ MonoBehaviour:
     RequiresWater: 0
     InWorld: 1
     InInventory: 1
-  DestroyOnUse: 0
+  DestroyOnUse: 1
   WorldInteraction:
     ActionTarget: {fileID: 0}
     BehaviourObject: {fileID: 0}

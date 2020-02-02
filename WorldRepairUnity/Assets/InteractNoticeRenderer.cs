@@ -24,7 +24,8 @@ public class InteractNoticeRenderer : MonoBehaviour
         var interaction = controller.CharacterInteractionZone.GetInteraction();
         ItemAction combo = default;
         if (interaction != null
-            && interaction.Behaviour == Interactable.InteractableBehaviour.Pickup
+            && (interaction.Behaviour == Interactable.InteractableBehaviour.Pickup
+                || interaction.Behaviour == Interactable.InteractableBehaviour.None)
             && controller.HeldItem != null)
         {
             combo = controller.HeldItem.Template.CanCombineInWorld(interaction.PickupItemTemplate);
