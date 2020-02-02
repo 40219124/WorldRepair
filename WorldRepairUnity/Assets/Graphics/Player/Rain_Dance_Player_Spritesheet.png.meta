@@ -143,7 +143,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 287
+        x: 148
         y: 1359
         width: 618
         height: 900
@@ -164,7 +164,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1278
+        x: 1139
         y: 1311
         width: 796
         height: 1058
@@ -185,7 +185,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 2479
+        x: 2340
         y: 1301
         width: 813
         height: 910
@@ -206,12 +206,12 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 3451
+        x: 3281
         y: 1323
-        width: 806
-        height: 917
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 838
+        height: 959
+      alignment: 9
+      pivot: {x: 0.44153997, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 4532
+        x: 4396
         y: 1314
-        width: 809
+        width: 820
         height: 864
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5298715, y: -0.00000014128508}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,12 +248,12 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 5724
+        x: 5584
         y: 1268
-        width: 780
+        width: 912
         height: 1056
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.32, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -269,7 +269,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 212
+        x: 78
         y: 138
         width: 871
         height: 976
@@ -290,10 +290,10 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 1281
+        x: 1129
         y: 118
         width: 825
-        height: 1140
+        height: 1176
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,7 +311,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 2375
+        x: 2241
         y: 138
         width: 781
         height: 1046
@@ -332,7 +332,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_9
       rect:
         serializedVersion: 2
-        x: 3454
+        x: 3316
         y: 139
         width: 663
         height: 1064
@@ -353,7 +353,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 4435
+        x: 4300
         y: 157
         width: 845
         height: 904
@@ -374,7 +374,7 @@ TextureImporter:
       name: Rain_Dance_Player_Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 5596
+        x: 5464
         y: 140
         width: 814
         height: 927
