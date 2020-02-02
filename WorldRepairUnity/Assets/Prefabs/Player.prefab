@@ -167,7 +167,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &7583700668844435951
 Animator:
   serializedVersion: 3
@@ -252,6 +252,8 @@ MonoBehaviour:
   DropPoint: {fileID: 7583700670936791660}
   PickupPoint: {fileID: 7583700670881079971}
   HeldRenderer: {fileID: 3890428457708397308}
+  IsVoided: 1
+  IsInteracting: 0
 --- !u!114 &7583700669708759978
 MonoBehaviour:
   m_ObjectHideFlags: 0
