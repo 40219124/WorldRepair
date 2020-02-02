@@ -65,7 +65,7 @@ public class AnimalWander : MonoBehaviour
         {
             Vector3 translation = new Vector3(direction.x, 0.0f, direction.y) * Time.deltaTime;
             Vector3 newLoc = transform.position + translation;
-            if (newLoc.sqrMagnitude > tetherLength * tetherLength)
+            if ((newLoc - home).sqrMagnitude > tetherLength * tetherLength)
             {
                 timeMoving = -1.0f;
             }
