@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public struct TileObjects
@@ -19,6 +20,7 @@ public class WorldManager : MonoBehaviour
 	public GroundStyle DefaultStyle;
 	public GroundStyle FertileStyle;
 	public GroundStyle GrassStyle;
+	public float managedLerpSpeed;
 
 	public bool HasRained = false;
 
@@ -110,6 +112,43 @@ public class WorldManager : MonoBehaviour
 				tile.MainTile.sprite = tile.Overlay.sprite;
 				tile.Overlay.gameObject.SetActive(false);
 			}
+		}
+	}
+
+	public IEnumerator<YieldInstruction> ManagedFade(GroundStyle newStyle, Func<float> value)
+	{
+		for (int x = 0; x < Width; x++)
+		{
+			for (int y = 0; y < Height; y++)
+			{
+				var tile = Map[x, y];
+
+				tile.Overlay.sprite = newStyle.RandomSprite();
+				tile.Overlay.gameObject.SetActive(true);
+				tile.Overlay.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+			}
+		}
+
+		float currentValue = 0.0f;
+
+		while (true)
+		{
+			float targetValue = value();
+
+			currentValue = Mathf.Lerp(currentValue, targetValue, managedLerpSpeed * Time.deltaTime);
+
+			for (int x = 0; x < Width; x++)
+			{
+				for (int y = 0; y < Height; y++)
+				{
+					var tile = Map[x, y];
+
+					tile.Overlay.gameObject.SetActive(true);
+					tile.Overlay.color = new Color(1.0f, 1.0f, 1.0f, currentValue);
+				}
+			}
+
+			yield return null;
 		}
 	}
 }

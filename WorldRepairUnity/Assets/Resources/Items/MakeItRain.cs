@@ -39,7 +39,15 @@ public class MakeItRain : BehaviourObj
         WorldManager.Instance.HasRained = true;
 
         // Fade the ground to fertile textures.
-        StartCoroutine(WorldManager.Instance.FadeToStyle(WorldManager.Instance.FertileStyle, 10.0f));
+        yield return StartCoroutine(WorldManager.Instance.FadeToStyle(WorldManager.Instance.FertileStyle, 10.0f));
+
+        WorldManager.Instance.StartCoroutine(WorldManager.Instance.ManagedFade(WorldManager.Instance.GrassStyle, () =>
+        {
+            float percent = ((float)Plant.AllPlants.Count) / 40.0f;
+
+
+            return percent;
+        }));
     }
 
     private void StopRaining()
