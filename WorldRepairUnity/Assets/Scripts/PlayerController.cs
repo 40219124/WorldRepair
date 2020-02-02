@@ -239,6 +239,8 @@ public class PlayerController : MonoBehaviour
                 var pos = interactable.transform.localPosition;
                 pos.y = 0.0f;
                 interactable.transform.localPosition = pos;
+
+                DropNotice.ActivateTime = Time.time;
             }
         }
         else if (interactable.Behaviour == Interactable.InteractableBehaviour.Trigger)
