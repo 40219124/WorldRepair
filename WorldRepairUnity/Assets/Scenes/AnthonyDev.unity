@@ -564,6 +564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7583700670881079970, guid: 489b856bfd6d8904ca1e6e3b21efa2fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 489b856bfd6d8904ca1e6e3b21efa2fc, type: 3}
 --- !u!114 &344809719 stripped
@@ -2261,7 +2266,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 344809718}
   m_PrefabAsset: {fileID: 0}
---- !u!195 &1736691270
+--- !u!195 &1736691274
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -4,6 +4,17 @@ using UnityEngine;
 public class Inventory
 {
 	public ItemSlot[] Slots = new ItemSlot[5];
+
+	public void Remove(Item item)
+	{
+		foreach (var slot in Slots)
+		{
+			if (slot.Contents == item)
+			{
+				slot.Contents = null;
+			}
+		}
+	}
 }
 
 public class CharacterInventory : MonoBehaviour

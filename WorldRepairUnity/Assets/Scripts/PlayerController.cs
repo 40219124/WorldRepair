@@ -20,8 +20,34 @@ public class PlayerController : MonoBehaviour
     private NavMeshAgent agent;
 
     public bool IsInteracting;
+
+    public Item HeldItem
+    {
+        get
+        {
+            return internalHeldItem;
+        }
+        set
+        {
+            internalHeldItem = value;
+
+            if (value == null)
+            {
+                HeldItem = null;
+                HeldRenderer.gameObject.SetActive(false);
+                panim.SetHolding(false);
+            }
+            else
+            {
+                HeldRenderer.sprite = HeldItem.Template.Icon;
+                HeldRenderer.gameObject.SetActive(true);
+                panim.SetHolding(true);
+            }
+        }
+    }
+
     [NonSerialized]
-    public Item HeldItem;
+    private Item internalHeldItem;
 
     private void Awake()
     {
@@ -50,28 +76,19 @@ public class PlayerController : MonoBehaviour
                     if (interaction != null
                         && interaction.Behaviour == Interactable.InteractableBehaviour.Pickup)
                     {
-                        combo = HeldItem.Template.CanCombineWith(interaction.PickupItemTemplate);
+                        combo = HeldItem.Template.CanCombineInWorld(interaction.PickupItemTemplate);
                     }
 
                     if (combo.BehaviourObject != null)
                     {
                         var clone = Instantiate(combo.BehaviourObject);
-
                         StartCoroutine(clone.Run(this, interaction));
 
                         if (HeldItem.Template.DestroyOnUse)
                         {
-                            foreach (var slot in inventory.Hotbar.Slots)
-                            {
-                                if (slot.Contents == HeldItem)
-                                {
-                                    slot.Contents = null;
-                                }
-                            }
+                            inventory.Hotbar.Remove(HeldItem);
 
                             HeldItem = null;
-                            HeldRenderer.gameObject.SetActive(false);
-                            panim.SetHolding(false);
                         }
                     }
                     // Can I use my current object's "World Interaction"
@@ -83,17 +100,9 @@ public class PlayerController : MonoBehaviour
 
                         if (HeldItem.Template.DestroyOnUse)
                         {
-                            foreach (var slot in inventory.Hotbar.Slots)
-                            {
-                                if (slot.Contents == HeldItem)
-                                {
-                                    slot.Contents = null;
-                                }
-                            }
+                            inventory.Hotbar.Remove(HeldItem);
 
                             HeldItem = null;
-                            HeldRenderer.gameObject.SetActive(false);
-                            panim.SetHolding(false);
                         }
                     }
                 }
@@ -109,20 +118,45 @@ public class PlayerController : MonoBehaviour
             }
             if (Input.GetButtonDown("IntInv"))
             {
-                var currentItem = inventory.CurrentItem;
-                if (currentItem != null && currentItem != HeldItem)
+                var selectSlot = inventory.CurrentItem;
+                if (selectSlot == null)
                 {
-                    HeldItem = currentItem;
-
-                    HeldRenderer.sprite = HeldItem.Template.Icon;
-                    HeldRenderer.gameObject.SetActive(true);
-                    panim.SetHolding(true);
+                    // Deselect
+                    HeldItem = null;
                 }
                 else
                 {
-                    HeldItem = null;
-                    HeldRenderer.gameObject.SetActive(false);
-                    panim.SetHolding(false);
+                    // Already held item
+                    if (selectSlot == HeldItem)
+                    {
+                        // Deselect
+                        HeldItem = null;
+                    }
+                    else
+                    {
+                        ItemAction combo = default;
+                        if (HeldItem != null)
+                        {
+                            combo = HeldItem.Template.CanCombineInInventory(selectSlot.Template);
+                        }
+
+                        // Can't combine; swap the selected one.
+                        if (combo.BehaviourObject == null)
+                        {
+                            HeldItem = selectSlot;
+                        }
+                        else
+                        {
+                            // Consume the two items used in crafting
+                            inventory.Hotbar.Remove(selectSlot);
+                            inventory.Hotbar.Remove(HeldItem);
+
+                            HeldItem = null;
+
+                            var clone = Instantiate(combo.BehaviourObject);
+                            StartCoroutine(clone.Run(this, null));
+                        }
+                    }
                 }
             }
 
@@ -134,8 +168,6 @@ public class PlayerController : MonoBehaviour
                     if (slot.Contents == HeldItem)
                     {
                         HeldItem = null;
-                        HeldRenderer.gameObject.SetActive(false);
-                        panim.SetHolding(false);
                     }
 
                     var clone = Instantiate(slot.Contents.Template.DroppedPrefab, DropPoint.position, Quaternion.identity, null);

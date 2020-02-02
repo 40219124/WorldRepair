@@ -19,7 +19,7 @@ public class CraftingNoticeRenderer : MonoBehaviour
         var controller = Target.GetComponent<PlayerController>();
         if (Target.CurrentItem != null && controller.HeldItem != null)
         {
-            var combination = Target.CurrentItem.Template.CanCombineWith(controller.HeldItem.Template);
+            var combination = Target.CurrentItem.Template.CanCombineInInventory(controller.HeldItem.Template);
 
             if (combination.ActionTarget != null)
             {

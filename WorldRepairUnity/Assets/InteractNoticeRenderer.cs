@@ -21,16 +21,13 @@ public class InteractNoticeRenderer : MonoBehaviour
 
         var interact = controller.CharacterInteractionZone.GetInteraction();
 
-        ItemAction interactCombination = default;
-        if (controller.HeldItem != null
-            && interact != null
-            && interact.Behaviour == Interactable.InteractableBehaviour.Pickup)
+        var interaction = controller.CharacterInteractionZone.GetInteraction();
+        ItemAction combo = default;
+        if (interaction != null
+            && interaction.Behaviour == Interactable.InteractableBehaviour.Pickup
+            && controller.HeldItem != null)
         {
-            var interactAsItem = interact.PickupItemTemplate;
-
-            interactCombination = controller.HeldItem.Template.Combinations
-                .Where(combo => combo.ActionTarget == interactAsItem)
-                .FirstOrDefault();
+            combo = controller.HeldItem.Template.CanCombineInWorld(interaction.PickupItemTemplate);
         }
 
         if (interact != null && controller.HeldItem == null)
@@ -58,10 +55,10 @@ public class InteractNoticeRenderer : MonoBehaviour
             HeaderText.text = controller.HeldItem.Template.WorldInteraction.ActionText;
             RootGroup.alpha = 1.0f;
         }
-        else if (interactCombination.BehaviourObject != null
-            && interactCombination.CanUse())
+        else if (combo.BehaviourObject != null
+            && combo.CanUse())
         {
-            HeaderText.text = interactCombination.ActionText;
+            HeaderText.text = combo.ActionText;
             RootGroup.alpha = 1.0f;
         }
         else

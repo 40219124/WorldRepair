@@ -54,10 +54,14 @@ public class ItemTemplate : ScriptableObject
 		};
 	}
 
-	public ItemAction CanCombineWith(ItemTemplate other)
+	public ItemAction CanCombineInInventory(ItemTemplate other)
 	{
 		foreach (var combination in Combinations)
 		{
+			if (!combination.InInventory)
+			{
+				continue;
+			}
 			if (combination.ActionTarget == other)
 			{
 				return combination;
@@ -66,6 +70,39 @@ public class ItemTemplate : ScriptableObject
 
 		foreach (var combination in other.Combinations)
 		{
+			if (!combination.InInventory)
+			{
+				continue;
+			}
+			if (combination.ActionTarget == this)
+			{
+				return combination;
+			}
+		}
+
+		return default;
+	}
+
+	public ItemAction CanCombineInWorld(ItemTemplate other)
+	{
+		foreach (var combination in Combinations)
+		{
+			if (!combination.InWorld)
+			{
+				continue;
+			}
+			if (combination.ActionTarget == other)
+			{
+				return combination;
+			}
+		}
+
+		foreach (var combination in other.Combinations)
+		{
+			if (!combination.InWorld)
+			{
+				continue;
+			}
 			if (combination.ActionTarget == this)
 			{
 				return combination;

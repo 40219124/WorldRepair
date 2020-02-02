@@ -10,27 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f66e82eaccbf67e488b28429abee223c, type: 3}
-  m_Name: Dead Plant
+  m_Name: Bugs
   m_EditorClassIdentifier: 
-  Name: Dead Plant
+  Name: Bugs
   Description: 
-  Icon: {fileID: 21300000, guid: 5f6e73963c6ccc947802936cb9086999, type: 3}
+  Icon: {fileID: -7385085746842954004, guid: 07a240be81c460f4db770070e992109b, type: 3}
   DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
     type: 3}
   Combinations:
-  - ActionTarget: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
-    BehaviourObject: {fileID: 6689114639577200190, guid: 8fbb2150a1189f942a700b226940288a,
+  - ActionTarget: {fileID: 11400000, guid: 9e8de410660359041a05b1309bd8b142, type: 2}
+    BehaviourObject: {fileID: 1530932339462051093, guid: 25ce1c334cd6eb64fb385b7eb6ce9263,
       type: 3}
-    ActionText: Search for Bugs
+    ActionText: Release Bugs in Grass
     RequiresWater: 0
-    InWorld: 0
-    InInventory: 1
-  DestroyOnUse: 1
+    InWorld: 1
+    InInventory: 0
+  DestroyOnUse: 0
   WorldInteraction:
     ActionTarget: {fileID: 0}
-    BehaviourObject: {fileID: 1530932339462051093, guid: e2add9acbaff8fb41a8fea794d2d1078,
-      type: 3}
-    ActionText: Sow the Dead Plant
-    RequiresWater: 1
-    InWorld: 1
+    BehaviourObject: {fileID: 0}
+    ActionText: 
+    RequiresWater: 0
+    InWorld: 0
     InInventory: 0
