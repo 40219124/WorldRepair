@@ -44,10 +44,20 @@ public class InteractionZone : MonoBehaviour
 		{
 			return null;
 		}
+		foreach (var inArea in InArea)
+		{
+			if (inArea.Behaviour != Interactable.InteractableBehaviour.None)
+			{
+				if (inArea.Behaviour == Interactable.InteractableBehaviour.Pickup
+					&& Owner.GetComponent<PlayerController>().IsVoided)
+				{
+					continue;
+				}
+				return inArea;
+			}
+		}
 
-		var interactable = InArea[0];
-
-		return interactable;
+		return null;
 	}
 
 	private void Prune()

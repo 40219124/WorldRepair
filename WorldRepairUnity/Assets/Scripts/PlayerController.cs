@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public Transform PickupPoint;
     public SpriteRenderer HeldRenderer;
 
+    public bool IsVoided = true;
+
     private PAnimController panim;
     private CharacterInventory inventory;
     private NavMeshAgent agent;
@@ -57,6 +59,8 @@ public class PlayerController : MonoBehaviour
         CharacterInteractionZone.ClaimOwnership(inventory);
 
         HeldRenderer.gameObject.SetActive(false);
+
+        IsVoided = true;
     }
 
     // Update is called once per frame
@@ -66,7 +70,8 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("IntWorld"))
             {
-                if (HeldItem != null)
+                if (HeldItem != null
+                    && !IsVoided)
                 {
                     // Can I craft my current object with this one in the world.
                     ItemAction combo = default;
@@ -115,7 +120,8 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-            if (Input.GetButtonDown("IntInv"))
+            if (Input.GetButtonDown("IntInv")
+                    && !IsVoided)
             {
                 var selectSlot = inventory.CurrentItem;
                 if (selectSlot == null)
@@ -207,7 +213,7 @@ public class PlayerController : MonoBehaviour
         {
             if (interactable.Devoiding)
             {
-                yield return StartCoroutine(panim.DevoidAnimation());
+                yield return StartCoroutine(panim.DevoidAnimation(this));
             }
         }
 

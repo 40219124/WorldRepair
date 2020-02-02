@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PAnimVoid
+  m_Name: BeeIdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,22 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2574680791838472271, guid: b56ad8a3c9d016d42b7baf8861e015b3,
+      value: {fileID: 2763684438416161042, guid: 7645d2c02fc5ab541a8b52e297b71a7a,
         type: 3}
-    - time: 0.5
-      value: {fileID: 4377876089464939802, guid: b56ad8a3c9d016d42b7baf8861e015b3,
+    - time: 0.125
+      value: {fileID: -2332983640317547041, guid: 7645d2c02fc5ab541a8b52e297b71a7a,
+        type: 3}
+    - time: 0.25
+      value: {fileID: 2763684438416161042, guid: 7645d2c02fc5ab541a8b52e297b71a7a,
+        type: 3}
+    - time: 0.375
+      value: {fileID: 4983148615625257047, guid: 7645d2c02fc5ab541a8b52e297b71a7a,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 2
+  m_SampleRate: 8
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -44,14 +50,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2574680791838472271, guid: b56ad8a3c9d016d42b7baf8861e015b3, type: 3}
-    - {fileID: 4377876089464939802, guid: b56ad8a3c9d016d42b7baf8861e015b3, type: 3}
+    - {fileID: 2763684438416161042, guid: 7645d2c02fc5ab541a8b52e297b71a7a, type: 3}
+    - {fileID: -2332983640317547041, guid: 7645d2c02fc5ab541a8b52e297b71a7a, type: 3}
+    - {fileID: 2763684438416161042, guid: 7645d2c02fc5ab541a8b52e297b71a7a, type: 3}
+    - {fileID: 4983148615625257047, guid: 7645d2c02fc5ab541a8b52e297b71a7a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -35,7 +35,8 @@ public class InteractNoticeRenderer : MonoBehaviour
             DescriptionText.gameObject.SetActive(false);
 
             RootGroup.alpha = 1.0f;
-            if (interact.Behaviour == Interactable.InteractableBehaviour.Pickup)
+            if (interact.Behaviour == Interactable.InteractableBehaviour.Pickup
+                && !controller.IsVoided)
             {
                 HeaderText.text = $"Pickup {interact.PickupItemTemplate.Name}";
             }
