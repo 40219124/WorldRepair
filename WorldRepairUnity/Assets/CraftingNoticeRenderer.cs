@@ -21,10 +21,10 @@ public class CraftingNoticeRenderer : MonoBehaviour
         {
             var combination = Target.CurrentItem.Template.CanCombineWith(controller.HeldItem.Template);
 
-            if (combination.OtherItem != null)
+            if (combination.ActionTarget != null)
             {
                 RootGroup.alpha = 1.0f;
-                HeaderText.text = $"Create {combination.OtherItem.Name}";
+                HeaderText.text = $"Create {combination.ActionTarget.Name}";
                 DescriptionText.text = $"{Target.CurrentItem.Template.Name} + {controller.HeldItem.Template.Name}";
                 DescriptionText.gameObject.SetActive(true);
             }

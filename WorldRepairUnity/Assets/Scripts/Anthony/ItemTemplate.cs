@@ -2,10 +2,28 @@
 using UnityEngine;
 
 [Serializable]
-public struct Combination
+public struct ItemAction
 {
-	public ItemTemplate OtherItem;
-	public GameObject BehaviourObject;
+	public ItemTemplate ActionTarget;
+	public BehaviourObj BehaviourObject;
+	public string ActionText;
+
+	public bool RequiresWater;
+	public bool InWorld;
+	public bool InInventory;
+
+	public bool CanUse()
+	{
+		if (RequiresWater)
+		{
+			if (!WorldManager.Instance.HasRained)
+			{
+				return false;
+			}
+		}
+
+		return true;
+	}
 }
 
 [CreateAssetMenu]
@@ -21,11 +39,12 @@ public class ItemTemplate : ScriptableObject
 	public GameObject DroppedPrefab;
 	
 	[Space]
-	public Combination[] Combinations;
+	public ItemAction[] Combinations;
 
 	[Space]
 	public bool DestroyOnUse;
-	public GameObject WorldInteraction;
+
+	public ItemAction WorldInteraction;
 
 	public Item Generate()
 	{
@@ -35,11 +54,11 @@ public class ItemTemplate : ScriptableObject
 		};
 	}
 
-	public Combination CanCombineWith(ItemTemplate other)
+	public ItemAction CanCombineWith(ItemTemplate other)
 	{
 		foreach (var combination in Combinations)
 		{
-			if (combination.OtherItem == other)
+			if (combination.ActionTarget == other)
 			{
 				return combination;
 			}
@@ -47,7 +66,7 @@ public class ItemTemplate : ScriptableObject
 
 		foreach (var combination in other.Combinations)
 		{
-			if (combination.OtherItem == this)
+			if (combination.ActionTarget == this)
 			{
 				return combination;
 			}

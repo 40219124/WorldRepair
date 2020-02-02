@@ -6,7 +6,8 @@ public class Interactable : MonoBehaviour
     public enum InteractableBehaviour
     {
         Pickup,
-        Trigger
+        Trigger,
+        None
     }
 
     public SpriteRenderer Renderer;

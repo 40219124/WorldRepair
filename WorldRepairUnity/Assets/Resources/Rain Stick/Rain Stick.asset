@@ -19,5 +19,11 @@ MonoBehaviour:
     type: 3}
   Combinations: []
   DestroyOnUse: 1
-  WorldInteraction: {fileID: 5478333827356725374, guid: ab8def832e5e23a4bbf3eee8d831b9a7,
-    type: 3}
+  WorldInteraction:
+    ActionTarget: {fileID: 0}
+    BehaviourObject: {fileID: 5478333827356725369, guid: ab8def832e5e23a4bbf3eee8d831b9a7,
+      type: 3}
+    ActionText: Perform Rain Dance
+    RequiresWater: 0
+    InWorld: 0
+    InInventory: 0

@@ -20,6 +20,8 @@ public class WorldManager : MonoBehaviour
 	public GroundStyle FertileStyle;
 	public GroundStyle GrassStyle;
 
+	public bool HasRained = false;
+
 	private TileObjects[,] Map;
 
 	private void Awake()

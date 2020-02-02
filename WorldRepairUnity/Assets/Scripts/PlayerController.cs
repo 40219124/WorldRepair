@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private CharacterInventory inventory;
     private NavMeshAgent agent;
 
-    private bool IsInteracting;
+    public bool IsInteracting;
     [NonSerialized]
     public Item HeldItem;
 
@@ -43,9 +43,21 @@ public class PlayerController : MonoBehaviour
             {
                 if (HeldItem != null)
                 {
-                    if (HeldItem.Template.WorldInteraction != null)
+                    // Can I craft my current object with this one in the world.
+                    ItemAction combo = default;
+                    var interaction = CharacterInteractionZone.GetInteraction();
+
+                    if (interaction != null
+                        && interaction.Behaviour == Interactable.InteractableBehaviour.Pickup)
                     {
-                        Instantiate(HeldItem.Template.WorldInteraction);
+                        combo = HeldItem.Template.CanCombineWith(interaction.PickupItemTemplate);
+                    }
+
+                    if (combo.BehaviourObject != null)
+                    {
+                        var clone = Instantiate(combo.BehaviourObject);
+
+                        StartCoroutine(clone.Run(this, interaction));
 
                         if (HeldItem.Template.DestroyOnUse)
                         {
@@ -60,12 +72,34 @@ public class PlayerController : MonoBehaviour
                             HeldItem = null;
                             HeldRenderer.gameObject.SetActive(false);
                             panim.SetHolding(false);
-                            IsInteracting = true;
+                        }
+                    }
+                    // Can I use my current object's "World Interaction"
+                    else if(HeldItem.Template.WorldInteraction.BehaviourObject != null
+                        && HeldItem.Template.WorldInteraction.CanUse())
+                    {
+                        var clone = Instantiate(HeldItem.Template.WorldInteraction.BehaviourObject);
+                        StartCoroutine(clone.Run(this, interaction));
+
+                        if (HeldItem.Template.DestroyOnUse)
+                        {
+                            foreach (var slot in inventory.Hotbar.Slots)
+                            {
+                                if (slot.Contents == HeldItem)
+                                {
+                                    slot.Contents = null;
+                                }
+                            }
+
+                            HeldItem = null;
+                            HeldRenderer.gameObject.SetActive(false);
+                            panim.SetHolding(false);
                         }
                     }
                 }
                 else
                 {
+                    // Can I interact with an item infront of me?
                     var interaction = CharacterInteractionZone.GetInteraction();
                     if (interaction != null)
                     {
@@ -138,7 +172,7 @@ public class PlayerController : MonoBehaviour
 
             Destroy(interactable.gameObject);
         }
-        else
+        else if (interactable.Behaviour == Interactable.InteractableBehaviour.Trigger)
         {
             if (interactable.Devoiding)
             {

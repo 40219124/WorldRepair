@@ -18,8 +18,18 @@ MonoBehaviour:
   DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
     type: 3}
   Combinations:
-  - OtherItem: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
-    BehaviourObject: {fileID: 5478333827356725374, guid: ab8def832e5e23a4bbf3eee8d831b9a7,
+  - ActionTarget: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
+    BehaviourObject: {fileID: 0}
+    ActionText: Craft "Item"
+    RequiresWater: 0
+    InWorld: 0
+    InInventory: 1
+  DestroyOnUse: 1
+  WorldInteraction:
+    ActionTarget: {fileID: 0}
+    BehaviourObject: {fileID: 1530932339462051093, guid: e2add9acbaff8fb41a8fea794d2d1078,
       type: 3}
-  DestroyOnUse: 0
-  WorldInteraction: {fileID: 0}
+    ActionText: Sow the Dead Plant
+    RequiresWater: 1
+    InWorld: 1
+    InInventory: 0

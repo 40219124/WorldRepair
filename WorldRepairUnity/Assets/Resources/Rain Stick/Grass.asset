@@ -10,21 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f66e82eaccbf67e488b28429abee223c, type: 3}
-  m_Name: Bones
+  m_Name: Grass
   m_EditorClassIdentifier: 
-  Name: Bones
+  Name: Grass
   Description: 
-  Icon: {fileID: 21300000, guid: c948c62f7f7356e4d9f070b2c8760bf3, type: 3}
-  DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
+  Icon: {fileID: 21300000, guid: c6be5e384a2b72949941a4c34493b9a9, type: 3}
+  DroppedPrefab: {fileID: 7076985020002090867, guid: e2add9acbaff8fb41a8fea794d2d1078,
     type: 3}
-  Combinations:
-  - ActionTarget: {fileID: 11400000, guid: 9e8de410660359041a05b1309bd8b142, type: 2}
-    BehaviourObject: {fileID: 1530932339462051093, guid: 27948fbfdd1b4cb4e9e8db20dd1c35b1,
-      type: 3}
-    ActionText: Fertilize Vegetation
-    RequiresWater: 0
-    InWorld: 1
-    InInventory: 0
+  Combinations: []
   DestroyOnUse: 0
   WorldInteraction:
     ActionTarget: {fileID: 0}
