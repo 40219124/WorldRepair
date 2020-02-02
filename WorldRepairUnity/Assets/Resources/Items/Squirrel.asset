@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66e82eaccbf67e488b28429abee223c, type: 3}
+  m_Name: Squirrel
+  m_EditorClassIdentifier: 
+  Name: Squirrel
+  Description: 
+  Icon: {fileID: 3127678412476784588, guid: 071c0bcefdd3e5943bee22e17b180d67, type: 3}
+  DroppedPrefab: {fileID: 5614738656659979445, guid: 6483c172e7fac9846a455a0dcbccc73c,
+    type: 3}
+  Combinations: []
+  DestroyOnUse: 0
+  WorldInteraction:
+    ActionTarget: {fileID: 0}
+    BehaviourObject: {fileID: 0}
+    ActionText: 
+    RequiresWater: 0
+    InWorld: 0
+    InInventory: 0
