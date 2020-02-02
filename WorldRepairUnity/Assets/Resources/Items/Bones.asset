@@ -25,6 +25,13 @@ MonoBehaviour:
     RequiresWater: 0
     InWorld: 1
     InInventory: 0
+  - ActionTarget: {fileID: 11400000, guid: ac401427e6141b04db3c41b49932fb7b, type: 2}
+    BehaviourObject: {fileID: -8940180692662331381, guid: 538f0ac7c64f5054cbe405709a1de297,
+      type: 3}
+    ActionText: Upgrade the Bugs
+    RequiresWater: 0
+    InWorld: 1
+    InInventory: 1
   DestroyOnUse: 0
   WorldInteraction:
     ActionTarget: {fileID: 0}

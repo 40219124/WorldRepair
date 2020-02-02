@@ -10,28 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f66e82eaccbf67e488b28429abee223c, type: 3}
-  m_Name: Bee
+  m_Name: Bird
   m_EditorClassIdentifier: 
-  Name: Bee
+  Name: Bird
   Description: 
-  Icon: {fileID: -2332983640317547041, guid: 7645d2c02fc5ab541a8b52e297b71a7a, type: 3}
-  DroppedPrefab: {fileID: 7358021951129806733, guid: 216b5ab53e4581c40b4f3756b21a5321,
+  Icon: {fileID: -4676484692542201690, guid: 60fb1aa756eb25c49a40459d252d63bb, type: 3}
+  DroppedPrefab: {fileID: 6566260685836311864, guid: e55c113f2edfcc646b7fb52ac58425a5,
     type: 3}
   Combinations:
   - ActionTarget: {fileID: 11400000, guid: ef3718bf01c2b5e42b7c0fbd8a14fe5a, type: 2}
-    BehaviourObject: {fileID: -7035631585820295385, guid: 3c398ed7a6d27e848a2fe8e208a80890,
+    BehaviourObject: {fileID: -7035631585820295385, guid: 52fce3a4eeca1ed468870015a8a633cc,
       type: 3}
-    ActionText: Place Bee
+    ActionText: Make a house a home
     RequiresWater: 0
     InWorld: 1
     InInventory: 0
-  - ActionTarget: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
-    BehaviourObject: {fileID: -1418656652264564819, guid: e55c113f2edfcc646b7fb52ac58425a5,
-      type: 3}
-    ActionText: Upgrade Bee
-    RequiresWater: 0
-    InWorld: 1
-    InInventory: 1
   DestroyOnUse: 1
   WorldInteraction:
     ActionTarget: {fileID: 0}

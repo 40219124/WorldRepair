@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -1114999428801001415
     second: Bird 2_1
+  - first:
+      213: -4676484692542201690
+    second: Bird 2_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -141,6 +144,27 @@ TextureImporter:
       bones: []
       spriteID: 9388d815de9b680f0800000000000000
       internalID: -1114999428801001415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bird 2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 123
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0687ff2f9c91fb0800000000000000
+      internalID: -4676484692542201690
       vertices: []
       indices: 
       edges: []
