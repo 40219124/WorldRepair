@@ -131,7 +131,7 @@ public class WorldManager : MonoBehaviour
 		}
 	}
 
-	public IEnumerator<YieldInstruction> ManagedFade(GroundStyle newStyle, Func<float> value)
+	public IEnumerator<YieldInstruction> ManagedFade(Func<float> value)
 	{
 		for (int x = 0; x < Width; x++)
 		{
@@ -139,7 +139,7 @@ public class WorldManager : MonoBehaviour
 			{
 				var tile = Map[x, y];
 
-				tile.Overlay.sprite = newStyle.RandomSprite();
+				tile.Overlay.sprite = FertileStyle.RandomSprite();
 				tile.Overlay.gameObject.SetActive(true);
 				tile.Overlay.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
 			}
