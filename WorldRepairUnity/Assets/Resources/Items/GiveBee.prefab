@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5478333827356725368}
   - component: {fileID: 6689114639577200190}
   m_Layer: 0
-  m_Name: GiveBugs
+  m_Name: GiveBee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 075432b6303986c4b93a5c62fe17b930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Template: {fileID: 11400000, guid: ac401427e6141b04db3c41b49932fb7b, type: 2}
+  Template: {fileID: 11400000, guid: a5ed972904ec8274b9552267208d26f6, type: 2}

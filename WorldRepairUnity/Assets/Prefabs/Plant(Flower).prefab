@@ -70,8 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6224024930817484846, guid: 3a74d394dae0d5f43b6cc0ad9149a1a2,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: e693b1e57904d8a4f8753a0cc5537394, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -143,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Renderer: {fileID: 1480766649312957734}
-  Behaviour: 2
-  PickupItemTemplate: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
+  Behaviour: 0
+  PickupItemTemplate: {fileID: 11400000, guid: 2ef5bfa8156a66e40baa0f4e21202a06, type: 2}
   AnimationName: 
   Devoiding: 0
 --- !u!95 &1530932339462051092

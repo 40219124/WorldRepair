@@ -24,7 +24,14 @@ MonoBehaviour:
     ActionText: Release Bugs in Grass
     RequiresWater: 0
     InWorld: 1
-    InInventory: 0
+    InInventory: 1
+  - ActionTarget: {fileID: 11400000, guid: 2ef5bfa8156a66e40baa0f4e21202a06, type: 2}
+    BehaviourObject: {fileID: 6689114639577200190, guid: 8fbb2150a1189f942a700b226940288a,
+      type: 3}
+    ActionText: Release Bugs in Flowers
+    RequiresWater: 0
+    InWorld: 1
+    InInventory: 1
   DestroyOnUse: 0
   WorldInteraction:
     ActionTarget: {fileID: 0}
