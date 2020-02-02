@@ -13,6 +13,7 @@ public class ItemSlotRenderer : MonoBehaviour
     [Space]
     public Transform HeldOffsetter;
     public float HeldOffset;
+    public float HideOffset = 142.0f;
     public float HoldLerp = 8.0f;
 
     private ItemSlot TargetSlot;
@@ -46,6 +47,13 @@ public class ItemSlotRenderer : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        var targetPostion = new Vector3(0, -HideOffset, 0);
+
+        HeldOffsetter.transform.localPosition = targetPostion;
+    }
+
     private void Update()
     {
         var player = TargetCharacter.GetComponent<PlayerController>();
@@ -59,6 +67,11 @@ public class ItemSlotRenderer : MonoBehaviour
         else
         {
             targetPostion = Vector3.zero;
+        }
+
+        if (player.IsVoided)
+        {
+            targetPostion = new Vector3(0, -HideOffset, 0);
         }
 
         HeldOffsetter.transform.localPosition = Vector3.Lerp(

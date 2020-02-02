@@ -33,7 +33,7 @@ public class PAnimController : MonoBehaviour
         }
     }
 
-    public IEnumerator<YieldInstruction> DevoidAnimation()
+    public IEnumerator<YieldInstruction> DevoidAnimation(PlayerController player)
     {
         anim.SetBool("Void", false);
         
@@ -44,9 +44,11 @@ public class PAnimController : MonoBehaviour
             if (anim.GetCurrentAnimatorStateInfo(layerIndex).IsName("NotVoid"))
             {
                 Direction(Vector3.back);
-                yield break;
+                break;
             }
         }
+
+        player.IsVoided = false;
     }
 
     public void SetVoid(bool state)
