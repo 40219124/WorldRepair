@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
 
             if (value == null)
             {
-                HeldItem = null;
                 HeldRenderer.gameObject.SetActive(false);
                 panim.SetHolding(false);
             }

@@ -33,5 +33,9 @@ public class CraftingNoticeRenderer : MonoBehaviour
                 RootGroup.alpha = 0.0f;
             }
         }
+        else
+        {
+            RootGroup.alpha = 0.0f;
+        }
     }
 }

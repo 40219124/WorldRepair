@@ -180,3 +180,6 @@ MonoBehaviour:
   anim: {fileID: 1530932339462051092}
   RandomSprites:
   - {fileID: 21300000, guid: c6be5e384a2b72949941a4c34493b9a9, type: 3}
+  Spreading: {fileID: 7076985020002090867}
+  MinSpreadWait: 2
+  MaxSpreadWait: 2
