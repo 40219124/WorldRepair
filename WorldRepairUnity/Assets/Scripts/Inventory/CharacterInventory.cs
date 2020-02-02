@@ -77,6 +77,19 @@ public class CharacterInventory : MonoBehaviour
 		}
 	}
 
+    public bool IsFull
+    {
+        get
+        {
+            bool emptySlot = false;
+            foreach (ItemSlot s in Hotbar.Slots)
+            {
+                emptySlot |= s.Contents == null;
+            }
+            return !emptySlot;
+        }
+    }
+
 	private void Update()
 	{
 		foreach (var mapping in Mappings)

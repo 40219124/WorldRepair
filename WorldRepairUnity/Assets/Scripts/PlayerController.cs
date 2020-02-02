@@ -218,9 +218,19 @@ public class PlayerController : MonoBehaviour
 
         if (interactable.Behaviour == Interactable.InteractableBehaviour.Pickup)
         {
-            inventory.AddToHotbar(interactable.PickupItem);
+            if (!inventory.IsFull)
+            {
+                inventory.AddToHotbar(interactable.PickupItem);
 
-            Destroy(interactable.gameObject);
+                Destroy(interactable.gameObject);
+            }
+            else
+            {
+                interactable.transform.SetParent(null);
+                Vector3 pos = interactable.transform.localPosition;
+                pos.y = 0.0f;
+                interactable.transform.localPosition = pos;
+            }
         }
         else if (interactable.Behaviour == Interactable.InteractableBehaviour.Trigger)
         {
