@@ -4,6 +4,7 @@ using UnityEngine;
 public class Plant : BehaviourObj
 {
     public static List<Plant> AllPlants = new List<Plant>();
+    public static float GlobalLockout;
 
     public Animator anim;
     public Sprite[] RandomSprites;
@@ -62,8 +63,13 @@ public class Plant : BehaviourObj
         {
             yield return new WaitForSeconds(Random.Range(MinSpreadWait, MaxSpreadWait));
 
+            while (Time.time < GlobalLockout)
+            {
+                yield return null;
+            }
+
             cache.Clear();
-            float localDistance = 0.5f;
+            float localDistance = 1.25f;
 
             foreach (var plant in AllPlants)
             {
@@ -75,7 +81,7 @@ public class Plant : BehaviourObj
                 }
             }
 
-            if (cache.Count < 4)
+            if (cache.Count < 3)
             {
                 var clone = Instantiate(Spreading);
 
@@ -97,8 +103,15 @@ public class Plant : BehaviourObj
                     }
 
                     clone.transform.position = transform.position - (direction.normalized * 0.5f)
-                    + new Vector3(Random.Range(-0.5f, 0.5f), 0, Random.Range(-0.5f, 0.5f));
+                        + new Vector3(Random.Range(-0.65f, 0.65f), 0, Random.Range(-0.65f, 0.65f));
+
+                    clone.transform.position = new Vector3(
+                        clone.transform.position.x,
+                        0,
+                        clone.transform.position.z);
                 }
+
+                GlobalLockout = Time.time + 0.5f;
             }
         }
     }
