@@ -80,9 +80,9 @@ public class WorldManager : MonoBehaviour
 			var clone = Instantiate(gameObject);
 
 			clone.transform.position = new Vector3(
-				UnityEngine.Random.Range(Width * -0.5f, Width * 0.5f),
+				UnityEngine.Random.Range((Width * -0.5f) - 0.5f, (Width * 0.5f) - 0.5f),
 				0,
-				UnityEngine.Random.Range(Height * -0.5f, Height * 0.5f)
+				UnityEngine.Random.Range((Height * -0.5f) - 0.5f, (Height * 0.5f) - 0.5f)
 			);
 
 			yield return new WaitForSeconds(over / count);
