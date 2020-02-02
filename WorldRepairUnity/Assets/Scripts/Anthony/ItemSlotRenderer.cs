@@ -10,6 +10,11 @@ public class ItemSlotRenderer : MonoBehaviour
     public Image SelectedGraphic;
     public Text SlotIndex;
 
+    [Space]
+    public Transform HeldOffsetter;
+    public float HeldOffset;
+    public float HoldLerp = 8.0f;
+
     private ItemSlot TargetSlot;
     private CharacterInventory TargetCharacter;
     private int Index;
@@ -39,6 +44,27 @@ public class ItemSlotRenderer : MonoBehaviour
         {
             SlotIndex.text = (index + 1).ToString();
         }
+    }
+
+    private void Update()
+    {
+        var player = TargetCharacter.GetComponent<PlayerController>();
+
+        Vector3 targetPostion;
+        if (player.HeldItem == TargetSlot.Contents
+            && TargetSlot.Contents != null)
+        {
+            targetPostion = new Vector3(0, HeldOffset, 0);
+        }
+        else
+        {
+            targetPostion = Vector3.zero;
+        }
+
+        HeldOffsetter.transform.localPosition = Vector3.Lerp(
+            HeldOffsetter.transform.localPosition,
+            targetPostion,
+            Time.deltaTime * HoldLerp);
     }
 
     private void UpdateGraphics()

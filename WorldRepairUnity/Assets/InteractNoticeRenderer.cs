@@ -20,7 +20,7 @@ public class InteractNoticeRenderer : MonoBehaviour
 
         var interact = controller.CharacterInteractionZone.GetInteraction();
 
-        if (interact != null)
+        if (interact != null && controller.HeldItem == null)
         {
             if (interact.Behaviour == Interactable.InteractableBehaviour.Pickup)
             {
