@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -19,7 +20,8 @@ public class PlayerController : MonoBehaviour
     private NavMeshAgent agent;
 
     private bool IsInteracting;
-    private Item HeldItem;
+    [NonSerialized]
+    public Item HeldItem;
 
     private void Awake()
     {
@@ -43,7 +45,7 @@ public class PlayerController : MonoBehaviour
                 {
                     if (HeldItem.Template.WorldInteraction != null)
                     {
-                        var clone = Instantiate(HeldItem.Template.WorldInteraction);
+                        Instantiate(HeldItem.Template.WorldInteraction);
 
                         if (HeldItem.Template.DestroyOnUse)
                         {

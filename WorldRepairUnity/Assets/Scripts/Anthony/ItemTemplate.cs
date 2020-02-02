@@ -34,4 +34,25 @@ public class ItemTemplate : ScriptableObject
 			Template = this
 		};
 	}
+
+	public Combination CanCombineWith(ItemTemplate other)
+	{
+		foreach (var combination in Combinations)
+		{
+			if (combination.OtherItem == other)
+			{
+				return combination;
+			}
+		}
+
+		foreach (var combination in other.Combinations)
+		{
+			if (combination.OtherItem == this)
+			{
+				return combination;
+			}
+		}
+
+		return default;
+	}
 }

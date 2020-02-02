@@ -17,6 +17,9 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 5f6e73963c6ccc947802936cb9086999, type: 3}
   DroppedPrefab: {fileID: 8555217568305397782, guid: 9a76f7e3906bff54fbe3762ae7ee98d6,
     type: 3}
-  Combinations: []
+  Combinations:
+  - OtherItem: {fileID: 11400000, guid: 81121dfbc5215594a9bf2d8f86a631fb, type: 2}
+    BehaviourObject: {fileID: 5478333827356725374, guid: ab8def832e5e23a4bbf3eee8d831b9a7,
+      type: 3}
   DestroyOnUse: 0
   WorldInteraction: {fileID: 0}
