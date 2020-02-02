@@ -25,7 +25,7 @@ public class CraftingNoticeRenderer : MonoBehaviour
             if (combination.ActionTarget != null)
             {
                 RootGroup.alpha = 1.0f;
-                HeaderText.text = $"Create {combination.ActionTarget.Name}";
+                HeaderText.text = $"Craft an item!";
                 DescriptionText.text = $"{Target.CurrentItem.Template.Name} + {controller.HeldItem.Template.Name}";
                 DescriptionText.gameObject.SetActive(true);
             }
