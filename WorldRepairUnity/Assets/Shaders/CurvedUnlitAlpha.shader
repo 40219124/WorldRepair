@@ -10,6 +10,7 @@
 		LOD 100
 
 		ZWrite Off
+		Cull Off
 		Blend SrcAlpha OneMinusSrcAlpha
 		ColorMask RGB
 

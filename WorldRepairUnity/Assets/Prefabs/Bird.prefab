@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7529422243123867729}
   - component: {fileID: 4259974797859725583}
   - component: {fileID: 2737111071466504402}
+  - component: {fileID: 779731819622938704}
+  - component: {fileID: 748581487060689235}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -93,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 279685476239909420}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2732d5ccdb1fd2e41aa8d4ead81d2a3f, type: 2}
+  m_Controller: {fileID: 9100000, guid: f627a28be54657a45a05c3f0ed5c5c5b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -102,6 +104,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &779731819622938704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279685476239909420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cc9edb66a3d1d4fb7974046454206e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2737111071466504402}
+  RandomSprites: []
+  Spreading: {fileID: 6566260685836311864}
+  MinSpreadWait: 10
+  MaxSpreadWait: 10
+--- !u!114 &748581487060689235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279685476239909420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f68bbdde94a869468610a6bbb74f2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdVariants:
+  - {fileID: 9100000, guid: 2732d5ccdb1fd2e41aa8d4ead81d2a3f, type: 2}
+  - {fileID: 9100000, guid: f627a28be54657a45a05c3f0ed5c5c5b, type: 2}
 --- !u!1 &6566260685836311864
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,6 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599158014613431875}
+  - component: {fileID: 532987985082646960}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -133,3 +168,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &532987985082646960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6566260685836311864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a13752107a10e14597ce140ed4c639d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.8
+  tetherLength: 0.5
+  spriteFacesRight: 1
