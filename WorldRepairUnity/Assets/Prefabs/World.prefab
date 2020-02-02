@@ -132,6 +132,7 @@ MonoBehaviour:
   DefaultStyle: {fileID: 11400000, guid: 3cb9c4b7b4fa6a74e9021e592aafe1fa, type: 2}
   FertileStyle: {fileID: 11400000, guid: 152497088e6ba9747afea9b3efb38707, type: 2}
   GrassStyle: {fileID: 11400000, guid: a9db095049556234dbcc344f28a0156d, type: 2}
+  managedLerpSpeed: 0.5
   HasRained: 0
 --- !u!1001 &4955778334165028502
 PrefabInstance:
