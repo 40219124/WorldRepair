@@ -5,11 +5,19 @@ using UnityEngine;
 public class AnimalWander : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 0.8f;
+    private float speed = 1.0f;
     [SerializeField]
     private float tetherLength = 1.0f;
     [SerializeField]
     private bool spriteFacesRight = true;
+    [SerializeField]
+    private float minMoveTime = 0.0f;
+    [SerializeField]
+    private float maxMoveTime = 1.0f;
+    [SerializeField]
+    private float minWaitTime = 0.0f;
+    [SerializeField]
+    private float maxWaitTime = 1.0f;
 
     private bool facingRight = true;
 
@@ -21,7 +29,7 @@ public class AnimalWander : MonoBehaviour
     void Start()
     {
         home = transform.position;
-        timeToNextMove = Random.Range(2.0f, 6.0f);
+        timeToNextMove = Random.Range(minWaitTime, maxWaitTime) + 1.0f;
         StartCoroutine(WaitToMove());
     }
 
@@ -52,34 +60,52 @@ public class AnimalWander : MonoBehaviour
     private IEnumerator<YieldInstruction> WaitToMove()
     {
         yield return new WaitForSeconds(timeToNextMove);
-        timeMoving = Random.Range(0.5f, 2.0f);
+        timeMoving = Random.Range(minMoveTime, maxMoveTime);
         StartCoroutine(DoMove());
     }
 
     private IEnumerator<YieldInstruction> DoMove()
     {
+        Vector3 wayHome = (home - transform.position);
+        Vector3 direction;
+        if (wayHome == Vector3.zero)
+        {
+            direction = Vector3.forward;
+        }
+        else
+        {
+            direction = wayHome.normalized * speed;
+        }
 
-        Vector2 direction = new Vector2(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f)).normalized * speed;
+        // get distance from home
+        float sqDist = wayHome.sqrMagnitude;
+        // divide by tether length
+        // range from 0 (in centre) to 1 (tether max) above 1 (beyond tether)
+        float cosRange = sqDist / (tetherLength * tetherLength);
+        // subtract 1 to get -1(centre), 0(tether), 1+(double tether range+)
+        cosRange -= 1.0f;
+        cosRange = Mathf.Min(cosRange, 1.0f);
+        // convert to degress 180,90,0
+        float angleLim = Mathf.Acos(cosRange) * Mathf.Rad2Deg;
+        // random range(-degrees,degrees)
+        float rotAngle = Random.Range(-angleLim, angleLim);
+        // rotate direction home around y-axis by random
+        direction = Quaternion.AngleAxis(rotAngle, Vector3.up) * direction;
+
         SetFacing(direction.x);
         while (true)
         {
-            Vector3 translation = new Vector3(direction.x, 0.0f, direction.y) * Time.deltaTime;
+            timeMoving -= Time.deltaTime;
+            Vector3 translation = direction * Time.deltaTime;
             Vector3 newLoc = transform.position + translation;
-            if ((newLoc - home).sqrMagnitude > tetherLength * tetherLength)
-            {
-                timeMoving = -1.0f;
-            }
-            else
-            {
-                transform.position = newLoc;
-            }
+            transform.position = newLoc;
             if (timeMoving > 0)
             {
                 yield return null;
             }
             else
             {
-                timeToNextMove = Random.Range(0.0f, 7.0f);
+                timeToNextMove = Random.Range(minWaitTime, maxWaitTime);
                 StartCoroutine(WaitToMove());
                 break;
             }

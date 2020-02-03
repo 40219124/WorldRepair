@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 2737111071466504402}
   RandomSprites: []
+  TreeType: 0
   Spreading: {fileID: 6566260685836311864}
   MinSpreadWait: 10
   MaxSpreadWait: 10
@@ -186,6 +187,10 @@ MonoBehaviour:
   speed: 0.8
   tetherLength: 0.5
   spriteFacesRight: 1
+  minMoveTime: 0.2
+  maxMoveTime: 0.4
+  minWaitTime: 0.1
+  maxWaitTime: 0.1
 --- !u!114 &5278916982801418820
 MonoBehaviour:
   m_ObjectHideFlags: 0
