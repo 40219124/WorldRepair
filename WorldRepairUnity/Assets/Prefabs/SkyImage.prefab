@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 8223419755980097920}
   - component: {fileID: 8223419755980097923}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SkyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -100
   m_TargetDisplay: 0
 --- !u!114 &8223419755980097920
 MonoBehaviour:

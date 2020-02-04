@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &71975155760172555
 Transform:
   m_ObjectHideFlags: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2392476677383534448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.115, y: 1.115, z: 1.115}
+  m_LocalPosition: {x: -0.5, y: -0.01, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4955778334785880551}
   m_RootOrder: 1
@@ -57,7 +57,8 @@ MeshRenderer:
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: 651b5bf3829cf694db40c4d358c03037, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,6 +130,7 @@ MonoBehaviour:
     type: 3}
   OverlayPrefab: {fileID: 2355778552663830981, guid: 27079c2a1c7daf74ca54a4f4bad98510,
     type: 3}
+  BelowDepth: 0.0015
   DefaultStyle: {fileID: 11400000, guid: 3cb9c4b7b4fa6a74e9021e592aafe1fa, type: 2}
   FertileStyle: {fileID: 11400000, guid: 152497088e6ba9747afea9b3efb38707, type: 2}
   GrassStyle: {fileID: 11400000, guid: a9db095049556234dbcc344f28a0156d, type: 2}
@@ -154,7 +156,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f4e2f9ec692fadf4295007d3b942baf5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f4e2f9ec692fadf4295007d3b942baf5,
         type: 3}
@@ -169,7 +171,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f4e2f9ec692fadf4295007d3b942baf5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f4e2f9ec692fadf4295007d3b942baf5,
         type: 3}
@@ -184,7 +186,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f4e2f9ec692fadf4295007d3b942baf5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f4e2f9ec692fadf4295007d3b942baf5,
         type: 3}

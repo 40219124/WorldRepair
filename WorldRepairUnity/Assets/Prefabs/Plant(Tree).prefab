@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 6224024930817484846, guid: 3a74d394dae0d5f43b6cc0ad9149a1a2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,6 +183,7 @@ MonoBehaviour:
   - {fileID: 6224024930817484846, guid: 3a74d394dae0d5f43b6cc0ad9149a1a2, type: 3}
   - {fileID: -8911251428918342384, guid: 3a74d394dae0d5f43b6cc0ad9149a1a2, type: 3}
   - {fileID: 2656247834339299217, guid: 3a74d394dae0d5f43b6cc0ad9149a1a2, type: 3}
+  TreeType: 0
   Spreading: {fileID: 7076985020002090867, guid: e2add9acbaff8fb41a8fea794d2d1078,
     type: 3}
   MinSpreadWait: 2

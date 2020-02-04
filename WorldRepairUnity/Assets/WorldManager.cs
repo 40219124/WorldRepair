@@ -14,14 +14,21 @@ public class WorldManager : MonoBehaviour
 
 	public int Width = 10;
 	public int Height = 10;
+
+	[Space]
 	public SpriteRenderer MainTilePrefab;
 	public SpriteRenderer OverlayPrefab;
 
+	[Space]
+	public float BelowDepth = 0.0125f;
+
+	[Space]
 	public GroundStyle DefaultStyle;
 	public GroundStyle FertileStyle;
 	public GroundStyle GrassStyle;
-	public float managedLerpSpeed;
 
+	[Space]
+	public float managedLerpSpeed;
 	public bool HasRained = false;
 
 	private TileObjects[,] Map;
@@ -40,7 +47,7 @@ public class WorldManager : MonoBehaviour
 		{
 			for (int y = 0; y < Height; y++)
 			{
-				var mainTile = Instantiate(MainTilePrefab, new Vector3(x - (Width * 0.5f), 0, y - (Height * 0.5f)), tileRotation, transform);
+				var mainTile = Instantiate(MainTilePrefab, new Vector3(x - (Width * 0.5f), -BelowDepth, y - (Height * 0.5f)), tileRotation, transform);
 				var overlayTile = Instantiate(OverlayPrefab, new Vector3(x - (Width * 0.5f), 0, y - (Height * 0.5f)), tileRotation, transform);
 
 				mainTile.gameObject.SetActive(true);
